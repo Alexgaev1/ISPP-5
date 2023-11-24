@@ -95,6 +95,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="УП_ПМ_01_Неверов_ДСDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="УП_ПМ_01_Неверов_ДСDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +162,28 @@
     </None>
     <None Include="УП_ПМ_01_Неверов_ДСDataSet.xss">
       <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet1.xsc">
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>УП_ПМ_01_Неверов_ДСDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet1.xss">
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet2.xsc">
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>УП_ПМ_01_Неверов_ДСDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="УП_ПМ_01_Неверов_ДСDataSet2.xss">
+      <DependentUpon>УП_ПМ_01_Неверов_ДСDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -20,11 +20,28 @@ namespace Охрана_квартир
          
         private void Form2_Load(object sender, EventArgs e)
         {
+            
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Settlement". При необходимости она может быть перемещена или удалена.
+            this.settlementTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Settlement);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Prolonging". При необходимости она может быть перемещена или удалена.
+            this.prolongingTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Prolonging);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.House". При необходимости она может быть перемещена или удалена.
+            this.houseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.House);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet._Flat_House". При необходимости она может быть перемещена или удалена.
+            this.flat_HouseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet._Flat_House);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Flat". При необходимости она может быть перемещена или удалена.
+            this.flatTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Flat);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Contract". При необходимости она может быть перемещена или удалена.
+            this.contractTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Contract);
+            
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Client". При необходимости она может быть перемещена или удалена.
+            this.clientTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Client);
+            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.User". При необходимости она может быть перемещена или удалена.
             this.userTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.User);
             ToolTip tt = new ToolTip();
             tt.SetToolTip(textBox1, "Введите значение, которое хотите найти в таблице") ;
-            dataGridView1.AllowUserToAddRows = false;
+            //dataGridView1.AllowUserToAddRows = false;
         }
         public int i;
         public void table (int i)
@@ -36,6 +53,43 @@ namespace Охрана_квартир
                     case 0:
                         dataGridView1.DataSource = userBindingSource;
                         break;
+                    case 1:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 2:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 3:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 4:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 5:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 6:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 7:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 8:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 9:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 10:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 11:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+                    case 12:
+                        dataGridView1.DataSource = userBindingSource;
+                        break;
+
                 }
             }
 
@@ -85,7 +139,7 @@ namespace Охрана_квартир
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                
+               
             }
         }
 
@@ -105,6 +159,71 @@ namespace Охрана_квартир
         {
             Командир com = new Командир();
             com.ShowDialog();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void houseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flatHouseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settlementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contractToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prolongingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void captureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void compensationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void taxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

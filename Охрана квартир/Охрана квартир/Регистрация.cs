@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,129 +18,140 @@ namespace Охрана_квартир
             InitializeComponent();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void выйтиИзПрилоденияToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Авторизация ав = new Авторизация();
-            Hide();
-            ав.Show();
-        }
-
-        private void вернутьсяКАвторизацииToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void Регистрация_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
 
-        private void toolStripButton1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Регистрация_Load(object sender, EventArgs e)
         {
-            a = 0;
-            label16.Visible = true;
-            label16.Text = "Шаг 1: Введите личные данные";
-            button1.Text = "Далее";
-            this.Size = new Size(340, 380);
-            groupBox1.Visible = true;
-            groupBox2.Visible = false;
-            groupBox3.Visible = false;
-            button2.Enabled = false;
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet2.Client". При необходимости она может быть перемещена или удалена.
+            this.clientTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet2.Client);
+            label16.Text = "Введите свои персональные данные";
+            this.Size = new Size(325, 375);
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(pictureBox1, "Нажмите, чтобы закрыть приложение");
+            tt.SetToolTip(pictureBox2, "Нажмите, чтобы вернуться к форме авторизации");
         }
-        int a = 0;
-        public void groupbox()
-        {
-            if (a == 0)
-            {
-                label16.Text = "Шаг 1: Введите личные данные";
-                groupBox1.Visible = true;
-                groupBox1.Location = new Point(12, 48);
-                button2.Location = new Point(18, 315);
-                button1.Location = new Point(189, 315);
-                this.Size = new Size(340, 385);
-                groupBox2.Visible = false;
-                groupBox3.Visible = false;
-                button1.Text = "Далее";
-            }
-            if (a == 1)
-            {
-                label16.Text = "Шаг 2: Введите данные своей квартиры";
-                button2.Enabled = true;
-                groupBox1.Visible = false;
-                button2.Location = new Point(18, 353);
-                button1.Location = new Point(189, 353);
-                groupBox2.Location = new Point(12, 48);
-                this.Size = new Size(340, 423);
-                groupBox2.Visible = true;
-                groupBox3.Visible = false;
-                button1.Text = "Далее";
-            }
-            if (a == 2)
-            {
-                label16.Text = "Шаг 3: Введите данные дома, \nв котором находится ваша квартира";
-                button2.Enabled = true;
-                groupBox1.Visible = false;
-                groupBox2.Visible = false;
-                button2.Location = new Point(18, 324);
-                button1.Location = new Point(189, 324);
-                this.Size = new Size(340, 394);
-                groupBox3.Location = new Point(12, 66);
-                groupBox3.Visible = true;
-                button1.Text = "Оформить";
-            }
-            if (a > 2)
-            {
-                a = 2;
-            }
-
-        }
+        
+        int n;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (button1.Text == "Оформить")
+            using (SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = УП_ПМ_01_Неверов_ДС; Integrated Security = True"))
             {
-
-            }
-            else
-            {
-                a++;
-                groupbox();
+                SqlDataAdapter da = new SqlDataAdapter("select * from [User]", sqlConnect);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                Boolean логин = true;
+                n = dataGridView1.RowCount;
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (dt.Rows[i]["Логин"].ToString() == textBox7.Text)
+                    {
+                        логин = false;
+                    }
+                }
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox4.Text == "" || maskedTextBox1.Text == "" || textBox7.Text == "" || textBox6.Text == "")
+                {
+                    MessageBox.Show("Введите все данные!");
+                }
+                else
+                {
+                    if (логин == false)
+                    {
+                        MessageBox.Show("Пользователь уже существует!!!");
+                    }
+                    else
+                    {
+                        SqlDataAdapter info1 = new SqlDataAdapter($"INSERT INTO [Client] (Registr,SecondName,FirstName,ThirdName,Address,Phone)VALUES('{n}','{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{maskedTextBox1.Text}');", sqlConnect);
+                        SqlDataAdapter info2 = new SqlDataAdapter($"INSERT INTO [User] (Registr,Логин,Пароль)VALUES('{n}','{textBox7.Text}','{textBox6.Text}');", sqlConnect);
+                        DataTable dt1 = new DataTable();
+                        DataTable dt2 = new DataTable();
+                        info1.Fill(dt1);
+                        info2.Fill(dt2);
+                    }
+                    MessageBox.Show($"Пользователь {textBox2.Text} {textBox1.Text} {textBox3.Text} был зарегестрирован.\nСейчас вас перекинет на форму авторизации, где вам необходимо ввести логин и пароль, который вы вводили.");
+                    Авторизация fd = new Авторизация();
+                    Hide();
+                    fd.Show();
+                }
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            a--;
-            groupbox();
-            if (a == 0)
-            {
-                a = 0;
-                button2.Enabled = false;
-            }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Авторизация fd = new Авторизация();
+            Hide();
+            fd.Show();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox2.Focus();
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox3.Focus();
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox4.Focus();
+            }
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                maskedTextBox1.Focus();
+            }
+        }
+
+        private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox7.Focus();
+            }
+        }
+
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox6.Focus();
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                button1.Focus();
+            }
         }
     }
 }

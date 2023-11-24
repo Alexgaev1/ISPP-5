@@ -126,10 +126,7 @@ namespace Охрана_квартир
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.LControlKey)
-            {
-                textBox2.Text = "";
-            }
+            
             if (e.KeyChar == (char)Keys.Enter)
             {
                 button1.Focus();
