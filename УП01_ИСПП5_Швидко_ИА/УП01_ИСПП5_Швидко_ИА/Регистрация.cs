@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
+namespace УП01_ИСПП5_Швидко_ИА
+{
+    public partial class Регистрация : Form
+    {
+        public Регистрация()
+        {
+            InitializeComponent();
+        }
+
+        private void roundBtn1_Click(object sender, EventArgs e)
+        {
+            if ((textBox5.Text == "") || (textBox4.Text == "") || (textBox2.Text == ""))
+            {
+                MessageBox.Show("Не все данные заполнены!", "Ошибка");
+            }
+            else
+            {
+                using (SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True"))
+                {
+                    SqlDataAdapter info = new SqlDataAdapter($"INSERT INTO Пользователи (Логин,Пароль,Почта) VALUES('{textBox5.Text}','{textBox4.Text}','{textBox2.Text}');", sqlConnect);
+                    DataTable tt = new DataTable();
+                    info.Fill(tt);
+                }
+
+                MessageBox.Show("Вы зарегестрированы как 'Покупатель'", "Уведомление");
+
+                Авторизация AvtFrm = new Авторизация();
+                AvtFrm.Show();
+                this.Hide();
+            }
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле не может содержать буквы");
+            }
+        }
+
+        private void roundBtn2_Click(object sender, EventArgs e)
+        {
+            Авторизация AvtFrm = new Авторизация();
+            AvtFrm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

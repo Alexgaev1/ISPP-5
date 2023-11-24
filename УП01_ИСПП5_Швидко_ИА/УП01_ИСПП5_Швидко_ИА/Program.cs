@@ -16,7 +16,7 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Авторизация());
         }
     }
 }

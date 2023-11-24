@@ -24,7 +24,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class УП01_ИСПП5_Швидко_ИАDataSet1 : global::System.Data.DataSet {
         
-        private Сорта_растенийDataTable tableСорта_растений;
+        private ПользователиDataTable tableПользователи;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Сорта_растений"] != null)) {
-                    base.Tables.Add(new Сорта_растенийDataTable(ds.Tables["Сорта_растений"]));
+                if ((ds.Tables["Пользователи"] != null)) {
+                    base.Tables.Add(new ПользователиDataTable(ds.Tables["Пользователи"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace УП01_ИСПП5_Швидко_ИА {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Сорта_растенийDataTable Сорта_растений {
+        public ПользователиDataTable Пользователи {
             get {
-                return this.tableСорта_растений;
+                return this.tableПользователи;
             }
         }
         
@@ -152,8 +152,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Сорта_растений"] != null)) {
-                    base.Tables.Add(new Сорта_растенийDataTable(ds.Tables["Сорта_растений"]));
+                if ((ds.Tables["Пользователи"] != null)) {
+                    base.Tables.Add(new ПользователиDataTable(ds.Tables["Пользователи"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace УП01_ИСПП5_Швидко_ИА {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableСорта_растений = ((Сорта_растенийDataTable)(base.Tables["Сорта_растений"]));
+            this.tableПользователи = ((ПользователиDataTable)(base.Tables["Пользователи"]));
             if ((initTable == true)) {
-                if ((this.tableСорта_растений != null)) {
-                    this.tableСорта_растений.InitVars();
+                if ((this.tableПользователи != null)) {
+                    this.tableПользователи.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace УП01_ИСПП5_Швидко_ИА {
             this.Namespace = "http://tempuri.org/УП01_ИСПП5_Швидко_ИАDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableСорта_растений = new Сорта_растенийDataTable();
-            base.Tables.Add(this.tableСорта_растений);
+            this.tableПользователи = new ПользователиDataTable();
+            base.Tables.Add(this.tableПользователи);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeСорта_растений() {
+        private bool ShouldSerializeПользователи() {
             return false;
         }
         
@@ -270,41 +270,29 @@ namespace УП01_ИСПП5_Швидко_ИА {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Сорта_растенийRowChangeEventHandler(object sender, Сорта_растенийRowChangeEvent e);
+        public delegate void ПользователиRowChangeEventHandler(object sender, ПользователиRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Сорта_растенийDataTable : global::System.Data.TypedTableBase<Сорта_растенийRow> {
+        public partial class ПользователиDataTable : global::System.Data.TypedTableBase<ПользователиRow> {
             
-            private global::System.Data.DataColumn columnКод_сорта_растения;
+            private global::System.Data.DataColumn columnКод_Пользователя;
             
-            private global::System.Data.DataColumn columnНазвание_растения;
+            private global::System.Data.DataColumn columnЛогин;
             
-            private global::System.Data.DataColumn columnНазвание_сорта;
+            private global::System.Data.DataColumn columnПароль;
             
-            private global::System.Data.DataColumn columnГод_выведения;
+            private global::System.Data.DataColumn columnПочта;
             
-            private global::System.Data.DataColumn columnАдаптация;
-            
-            private global::System.Data.DataColumn columnМорозоустойчивость;
-            
-            private global::System.Data.DataColumn columnСпособ_посадки;
-            
-            private global::System.Data.DataColumn columnФотография_представителя_сорта;
-            
-            private global::System.Data.DataColumn columnСрок_созревания_в_днях;
-            
-            private global::System.Data.DataColumn columnПримечание;
-            
-            private global::System.Data.DataColumn columnНаличие_в_текущее_время;
+            private global::System.Data.DataColumn columnПрава_Доступа;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийDataTable() {
-                this.TableName = "Сорта_растений";
+            public ПользователиDataTable() {
+                this.TableName = "Пользователи";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -312,7 +300,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Сорта_растенийDataTable(global::System.Data.DataTable table) {
+            internal ПользователиDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -329,96 +317,48 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Сорта_растенийDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ПользователиDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Код_сорта_растенияColumn {
+            public global::System.Data.DataColumn Код_ПользователяColumn {
                 get {
-                    return this.columnКод_сорта_растения;
+                    return this.columnКод_Пользователя;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Название_растенияColumn {
+            public global::System.Data.DataColumn ЛогинColumn {
                 get {
-                    return this.columnНазвание_растения;
+                    return this.columnЛогин;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Название_сортаColumn {
+            public global::System.Data.DataColumn ПарольColumn {
                 get {
-                    return this.columnНазвание_сорта;
+                    return this.columnПароль;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Год_выведенияColumn {
+            public global::System.Data.DataColumn ПочтаColumn {
                 get {
-                    return this.columnГод_выведения;
+                    return this.columnПочта;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn АдаптацияColumn {
+            public global::System.Data.DataColumn Права_ДоступаColumn {
                 get {
-                    return this.columnАдаптация;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn МорозоустойчивостьColumn {
-                get {
-                    return this.columnМорозоустойчивость;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Способ_посадкиColumn {
-                get {
-                    return this.columnСпособ_посадки;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Фотография_представителя_сортаColumn {
-                get {
-                    return this.columnФотография_представителя_сорта;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Срок_созревания_в_дняхColumn {
-                get {
-                    return this.columnСрок_созревания_в_днях;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ПримечаниеColumn {
-                get {
-                    return this.columnПримечание;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Наличие_в_текущее_времяColumn {
-                get {
-                    return this.columnНаличие_в_текущее_время;
+                    return this.columnПрава_Доступа;
                 }
             }
             
@@ -433,62 +373,56 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow this[int index] {
+            public ПользователиRow this[int index] {
                 get {
-                    return ((Сорта_растенийRow)(this.Rows[index]));
+                    return ((ПользователиRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Сорта_растенийRowChangeEventHandler Сорта_растенийRowChanging;
+            public event ПользователиRowChangeEventHandler ПользователиRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Сорта_растенийRowChangeEventHandler Сорта_растенийRowChanged;
+            public event ПользователиRowChangeEventHandler ПользователиRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Сорта_растенийRowChangeEventHandler Сорта_растенийRowDeleting;
+            public event ПользователиRowChangeEventHandler ПользователиRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Сорта_растенийRowChangeEventHandler Сорта_растенийRowDeleted;
+            public event ПользователиRowChangeEventHandler ПользователиRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddСорта_растенийRow(Сорта_растенийRow row) {
+            public void AddПользователиRow(ПользователиRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow AddСорта_растенийRow(int Код_сорта_растения, string Название_растения, string Название_сорта, System.DateTime Год_выведения, bool Адаптация, bool Морозоустойчивость, string Способ_посадки, byte[] Фотография_представителя_сорта, int Срок_созревания_в_днях, string Примечание, bool Наличие_в_текущее_время) {
-                Сорта_растенийRow rowСорта_растенийRow = ((Сорта_растенийRow)(this.NewRow()));
+            public ПользователиRow AddПользователиRow(string Логин, int Пароль, string Почта, string Права_Доступа) {
+                ПользователиRow rowПользователиRow = ((ПользователиRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Код_сорта_растения,
-                        Название_растения,
-                        Название_сорта,
-                        Год_выведения,
-                        Адаптация,
-                        Морозоустойчивость,
-                        Способ_посадки,
-                        Фотография_представителя_сорта,
-                        Срок_созревания_в_днях,
-                        Примечание,
-                        Наличие_в_текущее_время};
-                rowСорта_растенийRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowСорта_растенийRow);
-                return rowСорта_растенийRow;
+                        null,
+                        Логин,
+                        Пароль,
+                        Почта,
+                        Права_Доступа};
+                rowПользователиRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowПользователиRow);
+                return rowПользователиRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow FindByКод_сорта_растения(int Код_сорта_растения) {
-                return ((Сорта_растенийRow)(this.Rows.Find(new object[] {
-                            Код_сорта_растения})));
+            public ПользователиRow FindByКод_Пользователя(int Код_Пользователя) {
+                return ((ПользователиRow)(this.Rows.Find(new object[] {
+                            Код_Пользователя})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Сорта_растенийDataTable cln = ((Сорта_растенийDataTable)(base.Clone()));
+                ПользователиDataTable cln = ((ПользователиDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -496,84 +430,69 @@ namespace УП01_ИСПП5_Швидко_ИА {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Сорта_растенийDataTable();
+                return new ПользователиDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnКод_сорта_растения = base.Columns["Код_сорта_растения"];
-                this.columnНазвание_растения = base.Columns["Название_растения"];
-                this.columnНазвание_сорта = base.Columns["Название_сорта"];
-                this.columnГод_выведения = base.Columns["Год_выведения"];
-                this.columnАдаптация = base.Columns["Адаптация"];
-                this.columnМорозоустойчивость = base.Columns["Морозоустойчивость"];
-                this.columnСпособ_посадки = base.Columns["Способ_посадки"];
-                this.columnФотография_представителя_сорта = base.Columns["Фотография_представителя_сорта"];
-                this.columnСрок_созревания_в_днях = base.Columns["Срок_созревания_в_днях"];
-                this.columnПримечание = base.Columns["Примечание"];
-                this.columnНаличие_в_текущее_время = base.Columns["Наличие_в_текущее_время"];
+                this.columnКод_Пользователя = base.Columns["Код_Пользователя"];
+                this.columnЛогин = base.Columns["Логин"];
+                this.columnПароль = base.Columns["Пароль"];
+                this.columnПочта = base.Columns["Почта"];
+                this.columnПрава_Доступа = base.Columns["Права_Доступа"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnКод_сорта_растения = new global::System.Data.DataColumn("Код_сорта_растения", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnКод_сорта_растения);
-                this.columnНазвание_растения = new global::System.Data.DataColumn("Название_растения", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnНазвание_растения);
-                this.columnНазвание_сорта = new global::System.Data.DataColumn("Название_сорта", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnНазвание_сорта);
-                this.columnГод_выведения = new global::System.Data.DataColumn("Год_выведения", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnГод_выведения);
-                this.columnАдаптация = new global::System.Data.DataColumn("Адаптация", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnАдаптация);
-                this.columnМорозоустойчивость = new global::System.Data.DataColumn("Морозоустойчивость", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnМорозоустойчивость);
-                this.columnСпособ_посадки = new global::System.Data.DataColumn("Способ_посадки", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnСпособ_посадки);
-                this.columnФотография_представителя_сорта = new global::System.Data.DataColumn("Фотография_представителя_сорта", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnФотография_представителя_сорта);
-                this.columnСрок_созревания_в_днях = new global::System.Data.DataColumn("Срок_созревания_в_днях", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnСрок_созревания_в_днях);
-                this.columnПримечание = new global::System.Data.DataColumn("Примечание", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnПримечание);
-                this.columnНаличие_в_текущее_время = new global::System.Data.DataColumn("Наличие_в_текущее_время", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnНаличие_в_текущее_время);
+                this.columnКод_Пользователя = new global::System.Data.DataColumn("Код_Пользователя", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnКод_Пользователя);
+                this.columnЛогин = new global::System.Data.DataColumn("Логин", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnЛогин);
+                this.columnПароль = new global::System.Data.DataColumn("Пароль", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПароль);
+                this.columnПочта = new global::System.Data.DataColumn("Почта", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПочта);
+                this.columnПрава_Доступа = new global::System.Data.DataColumn("Права_Доступа", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПрава_Доступа);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnКод_сорта_растения}, true));
-                this.columnКод_сорта_растения.AllowDBNull = false;
-                this.columnКод_сорта_растения.Unique = true;
-                this.columnНазвание_растения.MaxLength = 50;
-                this.columnНазвание_сорта.MaxLength = 50;
-                this.columnСпособ_посадки.MaxLength = 2147483647;
-                this.columnПримечание.MaxLength = 2147483647;
+                                this.columnКод_Пользователя}, true));
+                this.columnКод_Пользователя.AutoIncrement = true;
+                this.columnКод_Пользователя.AutoIncrementSeed = -1;
+                this.columnКод_Пользователя.AutoIncrementStep = -1;
+                this.columnКод_Пользователя.AllowDBNull = false;
+                this.columnКод_Пользователя.ReadOnly = true;
+                this.columnКод_Пользователя.Unique = true;
+                this.columnЛогин.MaxLength = 100;
+                this.columnПочта.MaxLength = 100;
+                this.columnПрава_Доступа.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow NewСорта_растенийRow() {
-                return ((Сорта_растенийRow)(this.NewRow()));
+            public ПользователиRow NewПользователиRow() {
+                return ((ПользователиRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Сорта_растенийRow(builder);
+                return new ПользователиRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Сорта_растенийRow);
+                return typeof(ПользователиRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Сорта_растенийRowChanged != null)) {
-                    this.Сорта_растенийRowChanged(this, new Сорта_растенийRowChangeEvent(((Сорта_растенийRow)(e.Row)), e.Action));
+                if ((this.ПользователиRowChanged != null)) {
+                    this.ПользователиRowChanged(this, new ПользователиRowChangeEvent(((ПользователиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -581,8 +500,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Сорта_растенийRowChanging != null)) {
-                    this.Сорта_растенийRowChanging(this, new Сорта_растенийRowChangeEvent(((Сорта_растенийRow)(e.Row)), e.Action));
+                if ((this.ПользователиRowChanging != null)) {
+                    this.ПользователиRowChanging(this, new ПользователиRowChangeEvent(((ПользователиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -590,8 +509,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Сорта_растенийRowDeleted != null)) {
-                    this.Сорта_растенийRowDeleted(this, new Сорта_растенийRowChangeEvent(((Сорта_растенийRow)(e.Row)), e.Action));
+                if ((this.ПользователиRowDeleted != null)) {
+                    this.ПользователиRowDeleted(this, new ПользователиRowChangeEvent(((ПользователиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -599,14 +518,14 @@ namespace УП01_ИСПП5_Швидко_ИА {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Сорта_растенийRowDeleting != null)) {
-                    this.Сорта_растенийRowDeleting(this, new Сорта_растенийRowChangeEvent(((Сорта_растенийRow)(e.Row)), e.Action));
+                if ((this.ПользователиRowDeleting != null)) {
+                    this.ПользователиRowDeleting(this, new ПользователиRowChangeEvent(((ПользователиRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveСорта_растенийRow(Сорта_растенийRow row) {
+            public void RemoveПользователиRow(ПользователиRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -633,7 +552,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Сорта_растенийDataTable";
+                attribute2.FixedValue = "ПользователиDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -677,311 +596,138 @@ namespace УП01_ИСПП5_Швидко_ИА {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Сорта_растенийRow : global::System.Data.DataRow {
+        public partial class ПользователиRow : global::System.Data.DataRow {
             
-            private Сорта_растенийDataTable tableСорта_растений;
+            private ПользователиDataTable tableПользователи;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Сорта_растенийRow(global::System.Data.DataRowBuilder rb) : 
+            internal ПользователиRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableСорта_растений = ((Сорта_растенийDataTable)(this.Table));
+                this.tableПользователи = ((ПользователиDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Код_сорта_растения {
+            public int Код_Пользователя {
                 get {
-                    return ((int)(this[this.tableСорта_растений.Код_сорта_растенияColumn]));
+                    return ((int)(this[this.tableПользователи.Код_ПользователяColumn]));
                 }
                 set {
-                    this[this.tableСорта_растений.Код_сорта_растенияColumn] = value;
+                    this[this.tableПользователи.Код_ПользователяColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Название_растения {
-                get {
-                    try {
-                        return ((string)(this[this.tableСорта_растений.Название_растенияColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Название_растения\' в таблице \'Сорта_растений\' равно DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.Название_растенияColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Название_сорта {
+            public string Логин {
                 get {
                     try {
-                        return ((string)(this[this.tableСорта_растений.Название_сортаColumn]));
+                        return ((string)(this[this.tableПользователи.ЛогинColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Название_сорта\' в таблице \'Сорта_растений\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Логин\' в таблице \'Пользователи\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableСорта_растений.Название_сортаColumn] = value;
+                    this[this.tableПользователи.ЛогинColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime Год_выведения {
+            public int Пароль {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableСорта_растений.Год_выведенияColumn]));
+                        return ((int)(this[this.tableПользователи.ПарольColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Год_выведения\' в таблице \'Сорта_растений\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Пароль\' в таблице \'Пользователи\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableСорта_растений.Год_выведенияColumn] = value;
+                    this[this.tableПользователи.ПарольColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Адаптация {
+            public string Почта {
                 get {
                     try {
-                        return ((bool)(this[this.tableСорта_растений.АдаптацияColumn]));
+                        return ((string)(this[this.tableПользователи.ПочтаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адаптация\' в таблице \'Сорта_растений\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Почта\' в таблице \'Пользователи\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableСорта_растений.АдаптацияColumn] = value;
+                    this[this.tableПользователи.ПочтаColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Морозоустойчивость {
+            public string Права_Доступа {
                 get {
                     try {
-                        return ((bool)(this[this.tableСорта_растений.МорозоустойчивостьColumn]));
+                        return ((string)(this[this.tableПользователи.Права_ДоступаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Морозоустойчивость\' в таблице \'Сорта_растений\' равно DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Права_Доступа\' в таблице \'Пользователи\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableСорта_растений.МорозоустойчивостьColumn] = value;
+                    this[this.tableПользователи.Права_ДоступаColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Способ_посадки {
-                get {
-                    try {
-                        return ((string)(this[this.tableСорта_растений.Способ_посадкиColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Способ_посадки\' в таблице \'Сорта_растений\' равно DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.Способ_посадкиColumn] = value;
-                }
+            public bool IsЛогинNull() {
+                return this.IsNull(this.tableПользователи.ЛогинColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] Фотография_представителя_сорта {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableСорта_растений.Фотография_представителя_сортаColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Фотография_представителя_сорта\' в таблице \'Сорта_растений\' " +
-                                "равно DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.Фотография_представителя_сортаColumn] = value;
-                }
+            public void SetЛогинNull() {
+                this[this.tableПользователи.ЛогинColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Срок_созревания_в_днях {
-                get {
-                    try {
-                        return ((int)(this[this.tableСорта_растений.Срок_созревания_в_дняхColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Срок_созревания_в_днях\' в таблице \'Сорта_растений\' равно DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.Срок_созревания_в_дняхColumn] = value;
-                }
+            public bool IsПарольNull() {
+                return this.IsNull(this.tableПользователи.ПарольColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Примечание {
-                get {
-                    try {
-                        return ((string)(this[this.tableСорта_растений.ПримечаниеColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Примечание\' в таблице \'Сорта_растений\' равно DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.ПримечаниеColumn] = value;
-                }
+            public void SetПарольNull() {
+                this[this.tableПользователи.ПарольColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Наличие_в_текущее_время {
-                get {
-                    try {
-                        return ((bool)(this[this.tableСорта_растений.Наличие_в_текущее_времяColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Наличие_в_текущее_время\' в таблице \'Сорта_растений\' равно D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableСорта_растений.Наличие_в_текущее_времяColumn] = value;
-                }
+            public bool IsПочтаNull() {
+                return this.IsNull(this.tableПользователи.ПочтаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsНазвание_растенияNull() {
-                return this.IsNull(this.tableСорта_растений.Название_растенияColumn);
+            public void SetПочтаNull() {
+                this[this.tableПользователи.ПочтаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetНазвание_растенияNull() {
-                this[this.tableСорта_растений.Название_растенияColumn] = global::System.Convert.DBNull;
+            public bool IsПрава_ДоступаNull() {
+                return this.IsNull(this.tableПользователи.Права_ДоступаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsНазвание_сортаNull() {
-                return this.IsNull(this.tableСорта_растений.Название_сортаColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetНазвание_сортаNull() {
-                this[this.tableСорта_растений.Название_сортаColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsГод_выведенияNull() {
-                return this.IsNull(this.tableСорта_растений.Год_выведенияColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetГод_выведенияNull() {
-                this[this.tableСорта_растений.Год_выведенияColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsАдаптацияNull() {
-                return this.IsNull(this.tableСорта_растений.АдаптацияColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetАдаптацияNull() {
-                this[this.tableСорта_растений.АдаптацияColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsМорозоустойчивостьNull() {
-                return this.IsNull(this.tableСорта_растений.МорозоустойчивостьColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetМорозоустойчивостьNull() {
-                this[this.tableСорта_растений.МорозоустойчивостьColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsСпособ_посадкиNull() {
-                return this.IsNull(this.tableСорта_растений.Способ_посадкиColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetСпособ_посадкиNull() {
-                this[this.tableСорта_растений.Способ_посадкиColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsФотография_представителя_сортаNull() {
-                return this.IsNull(this.tableСорта_растений.Фотография_представителя_сортаColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetФотография_представителя_сортаNull() {
-                this[this.tableСорта_растений.Фотография_представителя_сортаColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsСрок_созревания_в_дняхNull() {
-                return this.IsNull(this.tableСорта_растений.Срок_созревания_в_дняхColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetСрок_созревания_в_дняхNull() {
-                this[this.tableСорта_растений.Срок_созревания_в_дняхColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsПримечаниеNull() {
-                return this.IsNull(this.tableСорта_растений.ПримечаниеColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetПримечаниеNull() {
-                this[this.tableСорта_растений.ПримечаниеColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsНаличие_в_текущее_времяNull() {
-                return this.IsNull(this.tableСорта_растений.Наличие_в_текущее_времяColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetНаличие_в_текущее_времяNull() {
-                this[this.tableСорта_растений.Наличие_в_текущее_времяColumn] = global::System.Convert.DBNull;
+            public void SetПрава_ДоступаNull() {
+                this[this.tableПользователи.Права_ДоступаColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -989,22 +735,22 @@ namespace УП01_ИСПП5_Швидко_ИА {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Сорта_растенийRowChangeEvent : global::System.EventArgs {
+        public class ПользователиRowChangeEvent : global::System.EventArgs {
             
-            private Сорта_растенийRow eventRow;
+            private ПользователиRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRowChangeEvent(Сорта_растенийRow row, global::System.Data.DataRowAction action) {
+            public ПользователиRowChangeEvent(ПользователиRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow Row {
+            public ПользователиRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1032,7 +778,7 @@ namespace УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАD
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Сорта_растенийTableAdapter : global::System.ComponentModel.Component {
+    public partial class ПользователиTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1046,7 +792,7 @@ namespace УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАD
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Сорта_растенийTableAdapter() {
+        public ПользователиTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1143,105 +889,56 @@ namespace УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАD
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Сорта_растений";
-            tableMapping.ColumnMappings.Add("Код_сорта_растения", "Код_сорта_растения");
-            tableMapping.ColumnMappings.Add("Название_растения", "Название_растения");
-            tableMapping.ColumnMappings.Add("Название_сорта", "Название_сорта");
-            tableMapping.ColumnMappings.Add("Год_выведения", "Год_выведения");
-            tableMapping.ColumnMappings.Add("Адаптация", "Адаптация");
-            tableMapping.ColumnMappings.Add("Морозоустойчивость", "Морозоустойчивость");
-            tableMapping.ColumnMappings.Add("Способ_посадки", "Способ_посадки");
-            tableMapping.ColumnMappings.Add("Фотография_представителя_сорта", "Фотография_представителя_сорта");
-            tableMapping.ColumnMappings.Add("Срок_созревания_в_днях", "Срок_созревания_в_днях");
-            tableMapping.ColumnMappings.Add("Примечание", "Примечание");
-            tableMapping.ColumnMappings.Add("Наличие_в_текущее_время", "Наличие_в_текущее_время");
+            tableMapping.DataSetTable = "Пользователи";
+            tableMapping.ColumnMappings.Add("Код_Пользователя", "Код_Пользователя");
+            tableMapping.ColumnMappings.Add("Логин", "Логин");
+            tableMapping.ColumnMappings.Add("Пароль", "Пароль");
+            tableMapping.ColumnMappings.Add("Почта", "Почта");
+            tableMapping.ColumnMappings.Add("Права_Доступа", "Права_Доступа");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Сорта_растений] WHERE (([Код_сорта_растения] = @Original_Код_сорта_растения) AND ((@IsNull_Название_растения = 1 AND [Название_растения] IS NULL) OR ([Название_растения] = @Original_Название_растения)) AND ((@IsNull_Название_сорта = 1 AND [Название_сорта] IS NULL) OR ([Название_сорта] = @Original_Название_сорта)) AND ((@IsNull_Год_выведения = 1 AND [Год_выведения] IS NULL) OR ([Год_выведения] = @Original_Год_выведения)) AND ((@IsNull_Адаптация = 1 AND [Адаптация] IS NULL) OR ([Адаптация] = @Original_Адаптация)) AND ((@IsNull_Морозоустойчивость = 1 AND [Морозоустойчивость] IS NULL) OR ([Морозоустойчивость] = @Original_Морозоустойчивость)) AND ((@IsNull_Срок_созревания_в_днях = 1 AND [Срок_созревания_в_днях] IS NULL) OR ([Срок_созревания_в_днях] = @Original_Срок_созревания_в_днях)) AND ((@IsNull_Наличие_в_текущее_время = 1 AND [Наличие_в_текущее_время] IS NULL) OR ([Наличие_в_текущее_время] = @Original_Наличие_в_текущее_время)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Пользователи] WHERE (([Код_Пользователя] = @Original_Код_Пользователя) AND ((@IsNull_Логин = 1 AND [Логин] IS NULL) OR ([Логин] = @Original_Логин)) AND ((@IsNull_Пароль = 1 AND [Пароль] IS NULL) OR ([Пароль] = @Original_Пароль)) AND ((@IsNull_Почта = 1 AND [Почта] IS NULL) OR ([Почта] = @Original_Почта)) AND ((@IsNull_Права_Доступа = 1 AND [Права_Доступа] IS NULL) OR ([Права_Доступа] = @Original_Права_Доступа)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Название_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Название_сорта", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Название_сорта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Год_выведения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Год_выведения", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Адаптация", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Морозоустойчивость", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Наличие_в_текущее_время", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_Пользователя", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_Пользователя", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Логин", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Логин", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Почта", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Почта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Права_Доступа", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Права_Доступа", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Сорта_растений] ([Код_сорта_растения], [Название_растения], [Название_сорта], [Год_выведения], [Адаптация], [Морозоустойчивость], [Способ_посадки], [Фотография_представителя_сорта], [Срок_созревания_в_днях], [Примечание], [Наличие_в_текущее_время]) VALUES (@Код_сорта_растения, @Название_растения, @Название_сорта, @Год_выведения, @Адаптация, @Морозоустойчивость, @Способ_посадки, @Фотография_представителя_сорта, @Срок_созревания_в_днях, @Примечание, @Наличие_в_текущее_время);
-SELECT Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время FROM Сорта_растений WHERE (Код_сорта_растения = @Код_сорта_растения)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Пользователи] ([Логин], [Пароль], [Почта], [Права_Доступа]) VA" +
+                "LUES (@Логин, @Пароль, @Почта, @Права_Доступа);\r\nSELECT Код_Пользователя, Логин," +
+                " Пароль, Почта, Права_Доступа FROM Пользователи WHERE (Код_Пользователя = SCOPE_" +
+                "IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_сорта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Год_выведения", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Способ_посадки", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Способ_посадки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография_представителя_сорта", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография_представителя_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Примечание", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Примечание", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Логин", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Почта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Права_Доступа", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Сорта_растений] SET [Код_сорта_растения] = @Код_сорта_растения, [На" +
-                "звание_растения] = @Название_растения, [Название_сорта] = @Название_сорта, [Год_" +
-                "выведения] = @Год_выведения, [Адаптация] = @Адаптация, [Морозоустойчивость] = @М" +
-                "орозоустойчивость, [Способ_посадки] = @Способ_посадки, [Фотография_представителя" +
-                "_сорта] = @Фотография_представителя_сорта, [Срок_созревания_в_днях] = @Срок_созр" +
-                "евания_в_днях, [Примечание] = @Примечание, [Наличие_в_текущее_время] = @Наличие_" +
-                "в_текущее_время WHERE (([Код_сорта_растения] = @Original_Код_сорта_растения) AND" +
-                " ((@IsNull_Название_растения = 1 AND [Название_растения] IS NULL) OR ([Название_" +
-                "растения] = @Original_Название_растения)) AND ((@IsNull_Название_сорта = 1 AND [" +
-                "Название_сорта] IS NULL) OR ([Название_сорта] = @Original_Название_сорта)) AND (" +
-                "(@IsNull_Год_выведения = 1 AND [Год_выведения] IS NULL) OR ([Год_выведения] = @O" +
-                "riginal_Год_выведения)) AND ((@IsNull_Адаптация = 1 AND [Адаптация] IS NULL) OR " +
-                "([Адаптация] = @Original_Адаптация)) AND ((@IsNull_Морозоустойчивость = 1 AND [М" +
-                "орозоустойчивость] IS NULL) OR ([Морозоустойчивость] = @Original_Морозоустойчиво" +
-                "сть)) AND ((@IsNull_Срок_созревания_в_днях = 1 AND [Срок_созревания_в_днях] IS N" +
-                "ULL) OR ([Срок_созревания_в_днях] = @Original_Срок_созревания_в_днях)) AND ((@Is" +
-                "Null_Наличие_в_текущее_время = 1 AND [Наличие_в_текущее_время] IS NULL) OR ([Нал" +
-                "ичие_в_текущее_время] = @Original_Наличие_в_текущее_время)));\r\nSELECT Код_сорта_" +
-                "растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоуст" +
-                "ойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_дня" +
-                "х, Примечание, Наличие_в_текущее_время FROM Сорта_растений WHERE (Код_сорта_раст" +
-                "ения = @Код_сорта_растения)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Пользователи] SET [Логин] = @Логин, [Пароль] = @Пароль, [Почта] = @Почта, [Права_Доступа] = @Права_Доступа WHERE (([Код_Пользователя] = @Original_Код_Пользователя) AND ((@IsNull_Логин = 1 AND [Логин] IS NULL) OR ([Логин] = @Original_Логин)) AND ((@IsNull_Пароль = 1 AND [Пароль] IS NULL) OR ([Пароль] = @Original_Пароль)) AND ((@IsNull_Почта = 1 AND [Почта] IS NULL) OR ([Почта] = @Original_Почта)) AND ((@IsNull_Права_Доступа = 1 AND [Права_Доступа] IS NULL) OR ([Права_Доступа] = @Original_Права_Доступа)));
+SELECT Код_Пользователя, Логин, Пароль, Почта, Права_Доступа FROM Пользователи WHERE (Код_Пользователя = @Код_Пользователя)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_сорта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Год_выведения", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Способ_посадки", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Способ_посадки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография_представителя_сорта", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография_представителя_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Примечание", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Примечание", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Название_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Название_сорта", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Название_сорта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_сорта", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Год_выведения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Год_выведения", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Год_выведения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Адаптация", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Морозоустойчивость", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Наличие_в_текущее_время", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Логин", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Почта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Права_Доступа", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_Пользователя", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_Пользователя", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Логин", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Логин", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Логин", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Пароль", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Пароль", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Почта", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Почта", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Почта", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Права_Доступа", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Права_Доступа", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Права_Доступа", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_Пользователя", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Код_Пользователя", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1257,9 +954,8 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адап" +
-                "тация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_" +
-                "созревания_в_днях, Примечание, Наличие_в_текущее_время FROM dbo.Сорта_растений";
+            this._commandCollection[0].CommandText = "SELECT Код_Пользователя, Логин, Пароль, Почта, Права_Доступа FROM dbo.Пользовател" +
+                "и";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1267,7 +963,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(УП01_ИСПП5_Швидко_ИАDataSet1.Сорта_растенийDataTable dataTable) {
+        public virtual int Fill(УП01_ИСПП5_Швидко_ИАDataSet1.ПользователиDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1280,9 +976,9 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual УП01_ИСПП5_Швидко_ИАDataSet1.Сорта_растенийDataTable GetData() {
+        public virtual УП01_ИСПП5_Швидко_ИАDataSet1.ПользователиDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            УП01_ИСПП5_Швидко_ИАDataSet1.Сорта_растенийDataTable dataTable = new УП01_ИСПП5_Швидко_ИАDataSet1.Сорта_растенийDataTable();
+            УП01_ИСПП5_Швидко_ИАDataSet1.ПользователиDataTable dataTable = new УП01_ИСПП5_Швидко_ИАDataSet1.ПользователиDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1290,7 +986,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(УП01_ИСПП5_Швидко_ИАDataSet1.Сорта_растенийDataTable dataTable) {
+        public virtual int Update(УП01_ИСПП5_Швидко_ИАDataSet1.ПользователиDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1298,7 +994,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(УП01_ИСПП5_Швидко_ИАDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "Сорта_растений");
+            return this.Adapter.Update(dataSet, "Пользователи");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1320,63 +1016,39 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Код_сорта_растения, string Original_Название_растения, string Original_Название_сорта, global::System.Nullable<global::System.DateTime> Original_Год_выведения, global::System.Nullable<bool> Original_Адаптация, global::System.Nullable<bool> Original_Морозоустойчивость, global::System.Nullable<int> Original_Срок_созревания_в_днях, global::System.Nullable<bool> Original_Наличие_в_текущее_время) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_сорта_растения));
-            if ((Original_Название_растения == null)) {
+        public virtual int Delete(int Original_Код_Пользователя, string Original_Логин, global::System.Nullable<int> Original_Пароль, string Original_Почта, string Original_Права_Доступа) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_Пользователя));
+            if ((Original_Логин == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Название_растения));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Логин));
             }
-            if ((Original_Название_сорта == null)) {
+            if ((Original_Пароль.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_Пароль.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Название_сорта));
-            }
-            if ((Original_Год_выведения.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_Год_выведения.Value));
-            }
-            else {
+            if ((Original_Почта == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_Адаптация.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_Адаптация.Value));
-            }
             else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Почта));
+            }
+            if ((Original_Права_Доступа == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_Морозоустойчивость.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((bool)(Original_Морозоустойчивость.Value));
-            }
             else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Срок_созревания_в_днях.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_Срок_созревания_в_днях.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Наличие_в_текущее_время.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((bool)(Original_Наличие_в_текущее_время.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Права_Доступа));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1398,67 +1070,30 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Код_сорта_растения, string Название_растения, string Название_сорта, global::System.Nullable<global::System.DateTime> Год_выведения, global::System.Nullable<bool> Адаптация, global::System.Nullable<bool> Морозоустойчивость, string Способ_посадки, byte[] Фотография_представителя_сорта, global::System.Nullable<int> Срок_созревания_в_днях, string Примечание, global::System.Nullable<bool> Наличие_в_текущее_время) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Код_сорта_растения));
-            if ((Название_растения == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+        public virtual int Insert(string Логин, global::System.Nullable<int> Пароль, string Почта, string Права_Доступа) {
+            if ((Логин == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Название_растения));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Логин));
             }
-            if ((Название_сорта == null)) {
+            if ((Пароль.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Пароль.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Почта == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Название_сорта));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Почта));
             }
-            if ((Год_выведения.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(Год_выведения.Value));
-            }
-            else {
+            if ((Права_Доступа == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Адаптация.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(Адаптация.Value));
-            }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Морозоустойчивость.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(Морозоустойчивость.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Способ_посадки == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Способ_посадки));
-            }
-            if ((Фотография_представителя_сорта == null)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((byte[])(Фотография_представителя_сорта));
-            }
-            if ((Срок_созревания_в_днях.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(Срок_созревания_в_днях.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            if ((Примечание == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Примечание));
-            }
-            if ((Наличие_в_текущее_время.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((bool)(Наличие_в_текущее_время.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Права_Доступа));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1480,144 +1115,65 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    int Код_сорта_растения, 
-                    string Название_растения, 
-                    string Название_сорта, 
-                    global::System.Nullable<global::System.DateTime> Год_выведения, 
-                    global::System.Nullable<bool> Адаптация, 
-                    global::System.Nullable<bool> Морозоустойчивость, 
-                    string Способ_посадки, 
-                    byte[] Фотография_представителя_сорта, 
-                    global::System.Nullable<int> Срок_созревания_в_днях, 
-                    string Примечание, 
-                    global::System.Nullable<bool> Наличие_в_текущее_время, 
-                    int Original_Код_сорта_растения, 
-                    string Original_Название_растения, 
-                    string Original_Название_сорта, 
-                    global::System.Nullable<global::System.DateTime> Original_Год_выведения, 
-                    global::System.Nullable<bool> Original_Адаптация, 
-                    global::System.Nullable<bool> Original_Морозоустойчивость, 
-                    global::System.Nullable<int> Original_Срок_созревания_в_днях, 
-                    global::System.Nullable<bool> Original_Наличие_в_текущее_время) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Код_сорта_растения));
-            if ((Название_растения == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+        public virtual int Update(string Логин, global::System.Nullable<int> Пароль, string Почта, string Права_Доступа, int Original_Код_Пользователя, string Original_Логин, global::System.Nullable<int> Original_Пароль, string Original_Почта, string Original_Права_Доступа, int Код_Пользователя) {
+            if ((Логин == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Название_растения));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Логин));
             }
-            if ((Название_сорта == null)) {
+            if ((Пароль.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Пароль.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Почта == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Название_сорта));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Почта));
             }
-            if ((Год_выведения.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Год_выведения.Value));
-            }
-            else {
+            if ((Права_Доступа == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Адаптация.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(Адаптация.Value));
-            }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Права_Доступа));
             }
-            if ((Морозоустойчивость.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(Морозоустойчивость.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Способ_посадки == null)) {
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Код_Пользователя));
+            if ((Original_Логин == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Способ_посадки));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Логин));
             }
-            if ((Фотография_представителя_сорта == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((byte[])(Фотография_представителя_сорта));
-            }
-            if ((Срок_созревания_в_днях.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Срок_созревания_в_днях.Value));
+            if ((Original_Пароль.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_Пароль.Value));
             }
             else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Примечание == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Примечание));
-            }
-            if ((Наличие_в_текущее_время.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Наличие_в_текущее_время.Value));
-            }
-            else {
+            if ((Original_Почта == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_Код_сорта_растения));
-            if ((Original_Название_растения == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_Почта));
+            }
+            if ((Original_Права_Доступа == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Название_растения));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Права_Доступа));
             }
-            if ((Original_Название_сорта == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Название_сорта));
-            }
-            if ((Original_Год_выведения.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_Год_выведения.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Адаптация.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((bool)(Original_Адаптация.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Морозоустойчивость.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((bool)(Original_Морозоустойчивость.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Срок_созревания_в_днях.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Original_Срок_созревания_в_днях.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Наличие_в_текущее_время.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((bool)(Original_Наличие_в_текущее_время.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Код_Пользователя));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1638,26 +1194,8 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string Название_растения, 
-                    string Название_сорта, 
-                    global::System.Nullable<global::System.DateTime> Год_выведения, 
-                    global::System.Nullable<bool> Адаптация, 
-                    global::System.Nullable<bool> Морозоустойчивость, 
-                    string Способ_посадки, 
-                    byte[] Фотография_представителя_сорта, 
-                    global::System.Nullable<int> Срок_созревания_в_днях, 
-                    string Примечание, 
-                    global::System.Nullable<bool> Наличие_в_текущее_время, 
-                    int Original_Код_сорта_растения, 
-                    string Original_Название_растения, 
-                    string Original_Название_сорта, 
-                    global::System.Nullable<global::System.DateTime> Original_Год_выведения, 
-                    global::System.Nullable<bool> Original_Адаптация, 
-                    global::System.Nullable<bool> Original_Морозоустойчивость, 
-                    global::System.Nullable<int> Original_Срок_созревания_в_днях, 
-                    global::System.Nullable<bool> Original_Наличие_в_текущее_время) {
-            return this.Update(Original_Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время, Original_Код_сорта_растения, Original_Название_растения, Original_Название_сорта, Original_Год_выведения, Original_Адаптация, Original_Морозоустойчивость, Original_Срок_созревания_в_днях, Original_Наличие_в_текущее_время);
+        public virtual int Update(string Логин, global::System.Nullable<int> Пароль, string Почта, string Права_Доступа, int Original_Код_Пользователя, string Original_Логин, global::System.Nullable<int> Original_Пароль, string Original_Почта, string Original_Права_Доступа) {
+            return this.Update(Логин, Пароль, Почта, Права_Доступа, Original_Код_Пользователя, Original_Логин, Original_Пароль, Original_Почта, Original_Права_Доступа, Original_Код_Пользователя);
         }
     }
     
@@ -1673,7 +1211,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         
         private UpdateOrderOption _updateOrder;
         
-        private Сорта_растенийTableAdapter _сорта_растенийTableAdapter;
+        private ПользователиTableAdapter _пользователиTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1695,12 +1233,12 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Сорта_растенийTableAdapter Сорта_растенийTableAdapter {
+        public ПользователиTableAdapter ПользователиTableAdapter {
             get {
-                return this._сорта_растенийTableAdapter;
+                return this._пользователиTableAdapter;
             }
             set {
-                this._сорта_растенийTableAdapter = value;
+                this._пользователиTableAdapter = value;
             }
         }
         
@@ -1723,9 +1261,9 @@ SELECT Код_сорта_растения, Название_растения, Н
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._сорта_растенийTableAdapter != null) 
-                            && (this._сорта_растенийTableAdapter.Connection != null))) {
-                    return this._сорта_растенийTableAdapter.Connection;
+                if (((this._пользователиTableAdapter != null) 
+                            && (this._пользователиTableAdapter.Connection != null))) {
+                    return this._пользователиTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1740,7 +1278,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._сорта_растенийTableAdapter != null)) {
+                if ((this._пользователиTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1754,12 +1292,12 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(УП01_ИСПП5_Швидко_ИАDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._сорта_растенийTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Сорта_растений.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._пользователиTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Пользователи.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._сорта_растенийTableAdapter.Update(updatedRows));
+                    result = (result + this._пользователиTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1773,11 +1311,11 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(УП01_ИСПП5_Швидко_ИАDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._сорта_растенийTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Сорта_растений.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._пользователиTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Пользователи.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._сорта_растенийTableAdapter.Update(addedRows));
+                    result = (result + this._пользователиTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1791,11 +1329,11 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(УП01_ИСПП5_Швидко_ИАDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._сорта_растенийTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Сорта_растений.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._пользователиTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Пользователи.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._сорта_растенийTableAdapter.Update(deletedRows));
+                    result = (result + this._пользователиTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1838,8 +1376,8 @@ SELECT Код_сорта_растения, Название_растения, Н
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._сорта_растенийTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._сорта_растенийTableAdapter.Connection) == false))) {
+            if (((this._пользователиTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._пользователиTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
                         "r, должны использовать одинаковую строку подключения.");
             }
@@ -1875,13 +1413,13 @@ SELECT Код_сорта_растения, Название_растения, Н
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._сорта_растенийTableAdapter != null)) {
-                    revertConnections.Add(this._сорта_растенийTableAdapter, this._сорта_растенийTableAdapter.Connection);
-                    this._сорта_растенийTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._сорта_растенийTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._сорта_растенийTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._сорта_растенийTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._сорта_растенийTableAdapter.Adapter);
+                if ((this._пользователиTableAdapter != null)) {
+                    revertConnections.Add(this._пользователиTableAdapter, this._пользователиTableAdapter.Connection);
+                    this._пользователиTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._пользователиTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._пользователиTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._пользователиTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._пользователиTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1942,9 +1480,9 @@ SELECT Код_сорта_растения, Название_растения, Н
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._сорта_растенийTableAdapter != null)) {
-                    this._сорта_растенийTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._сорта_растенийTableAdapter]));
-                    this._сорта_растенийTableAdapter.Transaction = null;
+                if ((this._пользователиTableAdapter != null)) {
+                    this._пользователиTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._пользователиTableAdapter]));
+                    this._пользователиTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
