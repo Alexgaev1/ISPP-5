@@ -12,7 +12,7 @@ namespace Охрана_квартир.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.6.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -40,6 +40,17 @@ namespace Охрана_квартир.Properties {
         public string УП_ПМ_01_Неверов_ДСConnectionString {
             get {
                 return ((string)(this["УП_ПМ_01_Неверов_ДСConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-QNPA1CAR\\SQLEXPRESS;Initial Catalog=Неверов_ОК;Integrated Secu" +
+            "rity=True;Pooling=False")]
+        public string Неверов_ОКConnectionString {
+            get {
+                return ((string)(this["Неверов_ОКConnectionString"]));
             }
         }
     }

@@ -20,25 +20,29 @@ namespace Охрана_квартир
          
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "неверов_ОКDataSet.Use". При необходимости она может быть перемещена или удалена.
+            this.useTableAdapter.Fill(this.неверов_ОКDataSet.Use);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "неверов_ОКDataSet.Use". При необходимости она может быть перемещена или удалена.
+            this.useTableAdapter.Fill(this.неверов_ОКDataSet.Use);
+
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Settlement". При необходимости она может быть перемещена или удалена.
+            //this.settlementTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Settlement);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Prolonging". При необходимости она может быть перемещена или удалена.
+            //this.prolongingTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Prolonging);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.House". При необходимости она может быть перемещена или удалена.
+            //this.houseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.House);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet._Flat_House". При необходимости она может быть перемещена или удалена.
+            //this.flat_HouseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet._Flat_House);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Flat". При необходимости она может быть перемещена или удалена.
+            //this.flatTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Flat);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Contract". При необходимости она может быть перемещена или удалена.
+            //this.contractTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Contract);
             
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Settlement". При необходимости она может быть перемещена или удалена.
-            this.settlementTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Settlement);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Prolonging". При необходимости она может быть перемещена или удалена.
-            this.prolongingTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Prolonging);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.House". При необходимости она может быть перемещена или удалена.
-            this.houseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.House);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet._Flat_House". При необходимости она может быть перемещена или удалена.
-            this.flat_HouseTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet._Flat_House);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Flat". При необходимости она может быть перемещена или удалена.
-            this.flatTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Flat);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Contract". При необходимости она может быть перемещена или удалена.
-            this.contractTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Contract);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Client". При необходимости она может быть перемещена или удалена.
+            //this.clientTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Client);
             
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.Client". При необходимости она может быть перемещена или удалена.
-            this.clientTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.Client);
-            
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.User". При необходимости она может быть перемещена или удалена.
-            this.userTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.User);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "уП_ПМ_01_Неверов_ДСDataSet.User". При необходимости она может быть перемещена или удалена.
+            //this.userTableAdapter.Fill(this.уП_ПМ_01_Неверов_ДСDataSet.User);
             ToolTip tt = new ToolTip();
             tt.SetToolTip(textBox1, "Введите значение, которое хотите найти в таблице") ;
             //dataGridView1.AllowUserToAddRows = false;
@@ -106,9 +110,7 @@ namespace Охрана_квартир
 
         private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Авторизация ав = new Авторизация();
-            Hide();
-            ав.Show();
+            
         }
 
         private void выйтиИзПриложенияToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,10 +139,7 @@ namespace Охрана_квартир
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-               
-            }
+
         }
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
@@ -222,6 +221,37 @@ namespace Охрана_квартир
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                dataGridView1.Rows[i].Selected = false;
+                for (int j = 0; j < dataGridView1.ColumnCount; j++)
+                {
+                    if (dataGridView1.Rows[i].Cells[j].Value != null)
+                    {
+                        if (dataGridView1.Rows[i].Cells[i].Value.ToString().Contains(textBox1.Text))
+                        {
+                            dataGridView1.Rows[i].Selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void вернутьсяКАвторизацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Авторизация ав = new Авторизация();
+            Hide();
+            ав.Show();
+        }
+
+        private void выйтиИзПриложенияToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void обновитьToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -67,6 +67,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Неверов_ОКDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Неверов_ОКDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Регистрация.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +146,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Неверов_ОКDataSet.xsc">
+      <DependentUpon>Неверов_ОКDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Неверов_ОКDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Неверов_ОКDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Неверов_ОКDataSet.xss">
+      <DependentUpon>Неверов_ОКDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Тур_фирмаDataSet.xsc">
       <DependentUpon>Тур_фирмаDataSet.xsd</DependentUpon>
     </None>

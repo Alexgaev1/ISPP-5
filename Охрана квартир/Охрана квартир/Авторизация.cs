@@ -39,9 +39,9 @@ namespace Охрана_квартир
             }
             else
             {
-                using (SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = УП_ПМ_01_Неверов_ДС; Integrated Security = True"))
+                using (SqlConnection sqlConnect = new SqlConnection("Data Source=LAPTOP-QNPA1CAR\\SQLEXPRESS;Initial Catalog = Неверов_ОК; Integrated Security = True"))
                 {
-                    SqlDataAdapter da = new SqlDataAdapter("select * from [User]", sqlConnect);
+                    SqlDataAdapter da = new SqlDataAdapter("select * from [Use]", sqlConnect);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     Boolean логин = false;
@@ -153,6 +153,11 @@ namespace Охрана_квартир
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
