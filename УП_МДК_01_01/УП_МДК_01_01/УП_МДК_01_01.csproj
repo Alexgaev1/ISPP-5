@@ -94,6 +94,12 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="УП01_ИСПП5_Работягова_ААDataSet.Designer.cs">
@@ -105,6 +111,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="УП01_ИСПП5_Работягова_ААDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet2.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -130,6 +141,9 @@
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,6 +162,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resources\Панельки\Thumbs.db" />
     <None Include="УП01_ИСПП5_Работягова_ААDataSet.xsc">
       <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet.xsd</DependentUpon>
     </None>
@@ -170,9 +185,36 @@
     <None Include="УП01_ИСПП5_Работягова_ААDataSet1.xss">
       <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="УП01_ИСПП5_Работягова_ААDataSet2.xsc">
+      <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="УП01_ИСПП5_Работягова_ААDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>УП01_ИСПП5_Работягова_ААDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="УП01_ИСПП5_Работягова_ААDataSet2.xss">
+      <DependentUpon>УП01_ИСПП5_Работягова_ААDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\Новая\" />
+    <Folder Include="resources\Хрущевка\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\Кирпич\3н.jpg" />
+    <Content Include="resources\Кирпич\5 х.jpg" />
+    <Content Include="resources\Кирпич\5 хр.jpg" />
+    <Content Include="resources\Кирпич\5.jfif" />
+    <Content Include="resources\Кирпич\5_.jpg" />
+    <Content Include="resources\Панельки\14.png" />
+    <Content Include="resources\Панельки\5 этажей.jpg" />
+    <Content Include="resources\Панельки\5.jpg" />
+    <Content Include="resources\Панельки\9 этажей.jpg" />
+    <Content Include="resources\Панельки\9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

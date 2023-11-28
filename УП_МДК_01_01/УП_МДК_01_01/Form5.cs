@@ -88,7 +88,7 @@ namespace УП_МДК_01_01
             if (button7.Text == "Право доступа")
             {
                 Hide();
-                Form8 form5 = new Form8();
+                Form9 form5 = new Form9();
                 form5.st(a);
                 form5.Show();
             }
@@ -122,6 +122,14 @@ namespace УП_МДК_01_01
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form8 form8 = new Form8();
+            form8.st(a);
+            form8.Show();
         }
     }
 }
