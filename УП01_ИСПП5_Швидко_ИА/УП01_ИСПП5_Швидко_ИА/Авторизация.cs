@@ -18,6 +18,8 @@ namespace УП01_ИСПП5_Швидко_ИА
         public Авторизация()
         {
             InitializeComponent();
+            Видимость_пароля_PictureBox2.Visible = true;
+            Скрыть_пароль_PictureBox3.Visible = false;
         }
 
         private void Кнопка_подтверждения_Click(object sender, EventArgs e)
@@ -78,35 +80,34 @@ namespace УП01_ИСПП5_Швидко_ИА
             Регистрация UsrFrm4 = new Регистрация();
             UsrFrm4.Show();
         }
-
-
         private void Кнопка_Войти_как_гость_Click(object sender, EventArgs e)
         {
             this.Hide();
             Гость UsrFrm3 = new Гость();
             UsrFrm3.Show();
         }
-
         private void выйти_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        int a = 0;
-
         private void Видимость_пароля_Click(object sender, EventArgs e)
         {
-            a++;
-            if (a==1)
+            if (Видимость_пароля_PictureBox2.Visible == true)
             {
+                Видимость_пароля_PictureBox2.Visible = false;
+                Скрыть_пароль_PictureBox3.Visible = true;
                 Пароль_textBox2.PasswordChar = '\0';
             }
-            if (a==2)
+        }
+        private void Скрыть_пароль_Click(object sender, EventArgs e)
+        {
+            if (Видимость_пароля_PictureBox2.Visible == false)
             {
+                Видимость_пароля_PictureBox2.Visible = true;
                 Пароль_textBox2.PasswordChar = '*';
-                a = 0;
+                Скрыть_пароль_PictureBox3.Visible = false;
             }
         }
-
         private void Пароль_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
@@ -124,7 +125,6 @@ namespace УП01_ИСПП5_Швидко_ИА
                 Top += e.Y - Mouse.Y;
             }
         }
-
         private void Авторизация_MouseDown(object sender, MouseEventArgs e)
         {
             Mouse = new Point(e.X, e.Y);

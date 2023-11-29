@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Reflection.Emit;
 
 namespace УП01_ИСПП5_Швидко_ИА
 {
@@ -17,7 +19,7 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             InitializeComponent();
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -39,7 +41,6 @@ namespace УП01_ИСПП5_Швидко_ИА
             }
         }
 
-        public Boolean a = false;
         int id = 0;
 
         int c;
@@ -54,21 +55,29 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             switch (c)
             {
-                case 0: продажиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Продажи); break;
+                case 0: продажиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Продажи);
+                        продажиTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Продажи); break;
 
-                case 1: покупателиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Покупатели); break;
+                case 1: покупателиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Покупатели); 
+                        покупателиTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Покупатели); break;
 
-                case 2: оптовые_покупателиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Оптовые_покупатели); break;
+                case 2: оптовые_покупателиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Оптовые_покупатели); 
+                        оптовые_покупателиTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Оптовые_покупатели); break;
 
-                case 3: продавцыTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Продавцы); break;
+                case 3: продавцыTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Продавцы); 
+                        продавцыTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Продавцы); break;
 
-                case 4: сорта_растенийTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений); break;
+                case 4: сорта_растенийTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений); 
+                        сорта_растенийTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений); break;
 
-                case 5: новые_сорта_растенийTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Новые_сорта_растений); break;
+                case 5: новые_сорта_растенийTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Новые_сорта_растений); 
+                        новые_сорта_растенийTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Новые_сорта_растений); break;
 
-                case 6: упаковки_семянTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян); break;
+                case 6: упаковки_семянTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян); 
+                        упаковки_семянTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян); break;
 
-                case 7: пользователиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Пользователи); break;
+                case 7: пользователиTableAdapter.Update(уП01_ИСПП5_Швидко_ИАDataSet.Пользователи); 
+                        пользователиTableAdapter.Fill(уП01_ИСПП5_Швидко_ИАDataSet.Пользователи); break;
             }
         }
 
@@ -82,7 +91,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(0);
             c = 0;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -91,7 +100,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(1);
             c = 1;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -100,7 +109,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(2);
             c = 2;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -109,7 +118,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(3);
             c = 3;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -117,9 +126,8 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             tab(4);
             c = 4;
-            a = true;
             Фотография_представителя_PictureBox2.Visible = true;
-            Кнопка_найти_фотографию_Button1.Visible = true;
+            Найти_фото_roundBtn2.Visible = true;
             Поле_для_таблиц_DataGridView1.Size = new Size(598, 301);
         }
 
@@ -128,7 +136,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(5);
             c = 5;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -137,7 +145,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(6);
             c = 6;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
@@ -146,56 +154,47 @@ namespace УП01_ИСПП5_Швидко_ИА
             tab(7);
             c = 7;
             Фотография_представителя_PictureBox2.Visible = false;
-            Кнопка_найти_фотографию_Button1.Visible = false;
+            Найти_фото_roundBtn2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
         private void Поисковая_строка_TextChanged(object sender, EventArgs e)
         {
-                for (int i = 0; i < Поле_для_таблиц_DataGridView1.RowCount; i++)
-                {
+            for (int i = 0; i < Поле_для_таблиц_DataGridView1.RowCount; i++)
+            {
                 Поле_для_таблиц_DataGridView1.Rows[i].Selected = false;
-                    for (int j = 0; j < Поле_для_таблиц_DataGridView1.ColumnCount; j++)
-                        if (Поле_для_таблиц_DataGridView1.Rows[i].Cells[j].Value != null)
-                            if (Поле_для_таблиц_DataGridView1.Rows[i].Cells[j].Value.ToString().Contains(Строка_поиска_TextBox1.Text))
-                            {
+                for (int j = 0; j < Поле_для_таблиц_DataGridView1.ColumnCount; j++)
+                    if (Поле_для_таблиц_DataGridView1.Rows[i].Cells[j].Value != null)
+                        if (Поле_для_таблиц_DataGridView1.Rows[i].Cells[j].Value.ToString().Contains(Строка_поиска_TextBox1.Text))
+                        {
                             Поле_для_таблиц_DataGridView1.Rows[i].Selected = true;
-                                break;
-                            }
+                            break;
+                        }
             }
         }
         string pic;
-        private void Поле_для_таблиц_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void Найти_фото_Click(object sender, EventArgs e)
         {
-            id = int.Parse(Поле_для_таблиц_DataGridView1.SelectedCells[0].RowIndex.ToString());
-            if (c == 4)
-            {
-                try
-                {
-                    pic = Поле_для_таблиц_DataGridView1[7, id].Value.ToString();
-                    выйти_PictureBox1.Image = Image.FromFile(pic);
-                    if (выйти_PictureBox1.Image != null)
-                    {
-                        Фотография_представителя_PictureBox2.Visible = true;
-                    }
+            SqlConnection sqlConnect = new SqlConnection("Data Source = sql; Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True");
+            sqlConnect.Open();
 
-                }
-                catch
-                {
-                    MessageBox.Show("Отсутствует изображение");
-                }
+            OpenFileDialog load = new OpenFileDialog();
+            if (load.ShowDialog() == DialogResult.OK)
+            {
+                Фотография_представителя_PictureBox2.ImageLocation = load.FileName;
+                SqlDataAdapter a = new SqlDataAdapter($"Update Сорта_растений set Фотография_представителя_сорта = '{load.FileName}' where Код_сорта_растения = '{Поле_для_таблиц_DataGridView1.Rows[Поле_для_таблиц_DataGridView1.SelectedCells[0].RowIndex].Cells[0].Value}'", sqlConnect);
+                DataSet dt = new DataSet();
+                a.Fill(dt);
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Поле_для_таблиц_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            try
             {
-                if (c == 4)
-                {
-                    Фотография_представителя_PictureBox2.Image = Image.FromFile(openFileDialog1.FileName);
-                }
+                pic = Поле_для_таблиц_DataGridView1.Rows[Поле_для_таблиц_DataGridView1.SelectedCells[0].RowIndex].Cells[7].Value.ToString();
+                Фотография_представителя_PictureBox2.Image = Image.FromFile(pic);
             }
+            catch { }
         }
         Point Mouse;
 

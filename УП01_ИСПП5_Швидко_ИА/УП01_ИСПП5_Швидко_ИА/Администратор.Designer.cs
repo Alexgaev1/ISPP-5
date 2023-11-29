@@ -48,7 +48,6 @@
             this.Строка_поиска_TextBox1 = new System.Windows.Forms.TextBox();
             this.Поиск_Label1 = new System.Windows.Forms.Label();
             this.Фотография_представителя_PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Кнопка_найти_фотографию_Button1 = new System.Windows.Forms.Button();
             this.уП01_ИСПП5_Швидко_ИАDataSet = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSet();
             this.новыесортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.новые_сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Новые_сорта_растенийTableAdapter();
@@ -67,10 +66,12 @@
             this.упаковкисемянBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.упаковки_семянTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Найти_фото_roundBtn2 = new Ремонт_пассажирских_вагонов.RoundBtn();
             ((System.ComponentModel.ISupportInitialize)(this.Поле_для_таблиц_DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).BeginInit();
             this.Строка_меню_MenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.новыесортарастенийBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.оптовыепокупателиBindingSource)).BeginInit();
@@ -82,7 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.упаковкисемянBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Поле_для_таблиц_DataGridView1
             // 
             this.Поле_для_таблиц_DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.Поле_для_таблиц_DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -90,52 +91,53 @@
             this.Поле_для_таблиц_DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Поле_для_таблиц_DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Поле_для_таблиц_DataGridView1.Location = new System.Drawing.Point(13, 33);
-            this.Поле_для_таблиц_DataGridView1.Name = "dataGridView1";
+            this.Поле_для_таблиц_DataGridView1.Name = "Поле_для_таблиц_DataGridView1";
             this.Поле_для_таблиц_DataGridView1.Size = new System.Drawing.Size(598, 301);
             this.Поле_для_таблиц_DataGridView1.TabIndex = 2;
+            this.Поле_для_таблиц_DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Поле_для_таблиц_DataGridView1_CellClick);
             // 
-            // pictureBox1
+            // выйти_PictureBox1
             // 
             this.выйти_PictureBox1.BackColor = System.Drawing.Color.LightYellow;
-            this.выйти_PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.выйти_PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.выйти_PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("выйти_PictureBox1.Image")));
+            this.выйти_PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("выйти_PictureBox1.InitialImage")));
             this.выйти_PictureBox1.Location = new System.Drawing.Point(794, -1);
-            this.выйти_PictureBox1.Name = "pictureBox1";
+            this.выйти_PictureBox1.Name = "выйти_PictureBox1";
             this.выйти_PictureBox1.Size = new System.Drawing.Size(25, 25);
             this.выйти_PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.выйти_PictureBox1.TabIndex = 25;
             this.выйти_PictureBox1.TabStop = false;
             this.выйти_PictureBox1.Click += new System.EventHandler(this.выйти_Click);
             // 
-            // Меню
+            // Меню_ToolStripMenuItem1
             // 
             this.Меню_ToolStripMenuItem1.BackColor = System.Drawing.Color.LightYellow;
             this.Меню_ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.вернуться_ToolStripMenuItem2,
             this.обновить_ToolStripMenuItem3});
-            this.Меню_ToolStripMenuItem1.Name = "Меню";
+            this.Меню_ToolStripMenuItem1.Name = "Меню_ToolStripMenuItem1";
             this.Меню_ToolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
             this.Меню_ToolStripMenuItem1.Text = "Меню";
             // 
-            // вернутьсяToolStripMenuItem
+            // вернуться_ToolStripMenuItem2
             // 
             this.вернуться_ToolStripMenuItem2.BackColor = System.Drawing.Color.LightYellow;
             this.вернуться_ToolStripMenuItem2.ForeColor = System.Drawing.Color.Red;
-            this.вернуться_ToolStripMenuItem2.Name = "вернутьсяToolStripMenuItem";
-            this.вернуться_ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.вернуться_ToolStripMenuItem2.Name = "вернуться_ToolStripMenuItem2";
+            this.вернуться_ToolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
             this.вернуться_ToolStripMenuItem2.Text = "Вернуться";
             this.вернуться_ToolStripMenuItem2.Click += new System.EventHandler(this.вернуться_Click);
             // 
-            // обновитьToolStripMenuItem
+            // обновить_ToolStripMenuItem3
             // 
             this.обновить_ToolStripMenuItem3.BackColor = System.Drawing.Color.LightYellow;
             this.обновить_ToolStripMenuItem3.ForeColor = System.Drawing.Color.Blue;
-            this.обновить_ToolStripMenuItem3.Name = "обновитьToolStripMenuItem";
-            this.обновить_ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.обновить_ToolStripMenuItem3.Name = "обновить_ToolStripMenuItem3";
+            this.обновить_ToolStripMenuItem3.Size = new System.Drawing.Size(130, 22);
             this.обновить_ToolStripMenuItem3.Text = "Обновить";
             this.обновить_ToolStripMenuItem3.Click += new System.EventHandler(this.обновить_Click);
             // 
-            // Таблицы
+            // Таблицы_ToolStripMenuItem4
             // 
             this.Таблицы_ToolStripMenuItem4.BackColor = System.Drawing.Color.LightYellow;
             this.Таблицы_ToolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -147,124 +149,114 @@
             this.Таблица_Новые_сорта_растений_ToolStripMenuItem10,
             this.Таблица_Упаковки_семян_ToolStripMenuItem11,
             this.Таблица_Пользователи_ToolStripMenuItem12});
-            this.Таблицы_ToolStripMenuItem4.Name = "Таблицы";
+            this.Таблицы_ToolStripMenuItem4.Name = "Таблицы_ToolStripMenuItem4";
             this.Таблицы_ToolStripMenuItem4.Size = new System.Drawing.Size(68, 20);
             this.Таблицы_ToolStripMenuItem4.Text = "Таблицы";
             // 
-            // toolStripMenuItem4
+            // Таблица_Продажи_ToolStripMenuItem5
             // 
             this.Таблица_Продажи_ToolStripMenuItem5.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Продажи_ToolStripMenuItem5.Name = "toolStripMenuItem4";
+            this.Таблица_Продажи_ToolStripMenuItem5.Name = "Таблица_Продажи_ToolStripMenuItem5";
             this.Таблица_Продажи_ToolStripMenuItem5.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Продажи_ToolStripMenuItem5.Text = "Продажи";
             this.Таблица_Продажи_ToolStripMenuItem5.Click += new System.EventHandler(this.Таблица_Продажи_Click);
             // 
-            // toolStripMenuItem5
+            // Таблица_Покупатели_ToolStripMenuItem6
             // 
             this.Таблица_Покупатели_ToolStripMenuItem6.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Покупатели_ToolStripMenuItem6.Name = "toolStripMenuItem5";
+            this.Таблица_Покупатели_ToolStripMenuItem6.Name = "Таблица_Покупатели_ToolStripMenuItem6";
             this.Таблица_Покупатели_ToolStripMenuItem6.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Покупатели_ToolStripMenuItem6.Text = "Покупатели";
             this.Таблица_Покупатели_ToolStripMenuItem6.Click += new System.EventHandler(this.Таблица_Покупатели_Click);
             // 
-            // toolStripMenuItem6
+            // Таблица_Оптовые_покупатели_ToolStripMenuItem7
             // 
             this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.Name = "toolStripMenuItem6";
+            this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.Name = "Таблица_Оптовые_покупатели_ToolStripMenuItem7";
             this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.Text = "Оптовые покупатели";
             this.Таблица_Оптовые_покупатели_ToolStripMenuItem7.Click += new System.EventHandler(this.Таблица_Оптовые_покупатели_Click);
             // 
-            // toolStripMenuItem7
+            // Таблица_Продавцы_ToolStripMenuItem8
             // 
             this.Таблица_Продавцы_ToolStripMenuItem8.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Продавцы_ToolStripMenuItem8.Name = "toolStripMenuItem7";
+            this.Таблица_Продавцы_ToolStripMenuItem8.Name = "Таблица_Продавцы_ToolStripMenuItem8";
             this.Таблица_Продавцы_ToolStripMenuItem8.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Продавцы_ToolStripMenuItem8.Text = "Продавцы";
             this.Таблица_Продавцы_ToolStripMenuItem8.Click += new System.EventHandler(this.Таблица_Продавцы_Click);
             // 
-            // toolStripMenuItem8
+            // Таблица_Сорта_растений_ToolStripMenuItem9
             // 
             this.Таблица_Сорта_растений_ToolStripMenuItem9.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Сорта_растений_ToolStripMenuItem9.Name = "toolStripMenuItem8";
+            this.Таблица_Сорта_растений_ToolStripMenuItem9.Name = "Таблица_Сорта_растений_ToolStripMenuItem9";
             this.Таблица_Сорта_растений_ToolStripMenuItem9.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Сорта_растений_ToolStripMenuItem9.Text = "Сорта растений";
             this.Таблица_Сорта_растений_ToolStripMenuItem9.Click += new System.EventHandler(this.Таблица_Сорта_растений_Click);
             // 
-            // toolStripMenuItem9
+            // Таблица_Новые_сорта_растений_ToolStripMenuItem10
             // 
             this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.Name = "toolStripMenuItem9";
+            this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.Name = "Таблица_Новые_сорта_растений_ToolStripMenuItem10";
             this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.Text = "Новые сорта";
             this.Таблица_Новые_сорта_растений_ToolStripMenuItem10.Click += new System.EventHandler(this.Таблица_Новые_сорта_растений_Click);
             // 
-            // toolStripMenuItem10
+            // Таблица_Упаковки_семян_ToolStripMenuItem11
             // 
             this.Таблица_Упаковки_семян_ToolStripMenuItem11.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Упаковки_семян_ToolStripMenuItem11.Name = "toolStripMenuItem10";
+            this.Таблица_Упаковки_семян_ToolStripMenuItem11.Name = "Таблица_Упаковки_семян_ToolStripMenuItem11";
             this.Таблица_Упаковки_семян_ToolStripMenuItem11.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Упаковки_семян_ToolStripMenuItem11.Text = "Упаковки семян";
             this.Таблица_Упаковки_семян_ToolStripMenuItem11.Click += new System.EventHandler(this.Таблица_Упаковки_семян_Click);
             // 
-            // toolStripMenuItem11
+            // Таблица_Пользователи_ToolStripMenuItem12
             // 
             this.Таблица_Пользователи_ToolStripMenuItem12.BackColor = System.Drawing.Color.LightYellow;
-            this.Таблица_Пользователи_ToolStripMenuItem12.Name = "toolStripMenuItem11";
+            this.Таблица_Пользователи_ToolStripMenuItem12.Name = "Таблица_Пользователи_ToolStripMenuItem12";
             this.Таблица_Пользователи_ToolStripMenuItem12.Size = new System.Drawing.Size(190, 22);
             this.Таблица_Пользователи_ToolStripMenuItem12.Text = "Пользователи";
             this.Таблица_Пользователи_ToolStripMenuItem12.Click += new System.EventHandler(this.Таблица_Пользователи_Click);
             // 
-            // menuStrip1
+            // Строка_меню_MenuStrip1
             // 
             this.Строка_меню_MenuStrip1.BackColor = System.Drawing.Color.LightYellow;
             this.Строка_меню_MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Меню_ToolStripMenuItem1,
             this.Таблицы_ToolStripMenuItem4});
             this.Строка_меню_MenuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.Строка_меню_MenuStrip1.Name = "menuStrip1";
+            this.Строка_меню_MenuStrip1.Name = "Строка_меню_MenuStrip1";
             this.Строка_меню_MenuStrip1.Size = new System.Drawing.Size(819, 24);
             this.Строка_меню_MenuStrip1.TabIndex = 3;
             this.Строка_меню_MenuStrip1.Text = "menuStrip1";
             // 
-            // textBox1
+            // Строка_поиска_TextBox1
             // 
             this.Строка_поиска_TextBox1.Location = new System.Drawing.Point(176, 1);
-            this.Строка_поиска_TextBox1.Name = "textBox1";
+            this.Строка_поиска_TextBox1.Name = "Строка_поиска_TextBox1";
             this.Строка_поиска_TextBox1.Size = new System.Drawing.Size(163, 20);
             this.Строка_поиска_TextBox1.TabIndex = 26;
             this.Строка_поиска_TextBox1.TextChanged += new System.EventHandler(this.Поисковая_строка_TextChanged);
             // 
-            // Поиск_label1
+            // Поиск_Label1
             // 
             this.Поиск_Label1.AutoSize = true;
             this.Поиск_Label1.BackColor = System.Drawing.Color.LightYellow;
             this.Поиск_Label1.Location = new System.Drawing.Point(135, 5);
-            this.Поиск_Label1.Name = "Поиск_label1";
+            this.Поиск_Label1.Name = "Поиск_Label1";
             this.Поиск_Label1.Size = new System.Drawing.Size(39, 13);
             this.Поиск_Label1.TabIndex = 27;
             this.Поиск_Label1.Text = "Поиск";
             // 
-            // pictureBox2
+            // Фотография_представителя_PictureBox2
             // 
             this.Фотография_представителя_PictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.Фотография_представителя_PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Фотография_представителя_PictureBox2.Location = new System.Drawing.Point(617, 33);
-            this.Фотография_представителя_PictureBox2.Name = "pictureBox2";
+            this.Фотография_представителя_PictureBox2.Name = "Фотография_представителя_PictureBox2";
             this.Фотография_представителя_PictureBox2.Size = new System.Drawing.Size(191, 190);
             this.Фотография_представителя_PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Фотография_представителя_PictureBox2.TabIndex = 28;
             this.Фотография_представителя_PictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.Кнопка_найти_фотографию_Button1.Location = new System.Drawing.Point(675, 238);
-            this.Кнопка_найти_фотографию_Button1.Name = "button1";
-            this.Кнопка_найти_фотографию_Button1.Size = new System.Drawing.Size(75, 23);
-            this.Кнопка_найти_фотографию_Button1.TabIndex = 30;
-            this.Кнопка_найти_фотографию_Button1.Text = "button1";
-            this.Кнопка_найти_фотографию_Button1.UseVisualStyleBackColor = true;
-            this.Кнопка_найти_фотографию_Button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // уП01_ИСПП5_Швидко_ИАDataSet
             // 
@@ -347,13 +339,33 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(730, 326);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 31;
+            // 
+            // Найти_фото_roundBtn2
+            // 
+            this.Найти_фото_roundBtn2.BackColor = System.Drawing.Color.LightYellow;
+            this.Найти_фото_roundBtn2.Location = new System.Drawing.Point(677, 229);
+            this.Найти_фото_roundBtn2.Name = "Найти_фото_roundBtn2";
+            this.Найти_фото_roundBtn2.Radius = 10;
+            this.Найти_фото_roundBtn2.Size = new System.Drawing.Size(75, 26);
+            this.Найти_фото_roundBtn2.TabIndex = 33;
+            this.Найти_фото_roundBtn2.Text = "Найти фото";
+            this.Найти_фото_roundBtn2.Click += new System.EventHandler(this.Найти_фото_Click);
+            // 
             // Администратор
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(819, 348);
-            this.Controls.Add(this.Кнопка_найти_фотографию_Button1);
+            this.Controls.Add(this.Найти_фото_roundBtn2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.выйти_PictureBox1);
             this.Controls.Add(this.Поиск_Label1);
             this.Controls.Add(this.Строка_поиска_TextBox1);
@@ -373,7 +385,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).EndInit();
             this.Строка_меню_MenuStrip1.ResumeLayout(false);
             this.Строка_меню_MenuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.новыесортарастенийBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.оптовыепокупателиBindingSource)).EndInit();
@@ -407,7 +419,6 @@
         private System.Windows.Forms.TextBox Строка_поиска_TextBox1;
         private System.Windows.Forms.Label Поиск_Label1;
         private System.Windows.Forms.PictureBox Фотография_представителя_PictureBox2;
-        private System.Windows.Forms.Button Кнопка_найти_фотографию_Button1;
         private УП01_ИСПП5_Швидко_ИАDataSet уП01_ИСПП5_Швидко_ИАDataSet;
         private System.Windows.Forms.BindingSource новыесортарастенийBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Новые_сорта_растенийTableAdapter новые_сорта_растенийTableAdapter;
@@ -426,6 +437,8 @@
         private System.Windows.Forms.BindingSource упаковкисемянBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter упаковки_семянTableAdapter;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private Ремонт_пассажирских_вагонов.RoundBtn Найти_фото_roundBtn2;
     }
 }
 

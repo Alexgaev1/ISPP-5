@@ -17,6 +17,8 @@ namespace УП01_ИСПП5_Швидко_ИА
         public Покупатель()
         {
             InitializeComponent();
+            Фотография_представителя_PictureBox2.Visible = false;
+            Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
         public void Tob(int i)
@@ -30,8 +32,6 @@ namespace УП01_ИСПП5_Швидко_ИА
             so[i].Fill(ps);
             Поле_для_таблиц_DataGridView1.DataSource = ps.Tables[0];
         }
-        public Boolean a = false;
-        public Boolean b = false;
 
         private void вернуться_Click(object sender, EventArgs e)
         {
@@ -43,13 +43,15 @@ namespace УП01_ИСПП5_Швидко_ИА
         private void Таблица_Сорта_растений_Click(object sender, EventArgs e)
         {
             Tob(0);
-            a = true;
+            Фотография_представителя_PictureBox2.Visible = true;
+            Поле_для_таблиц_DataGridView1.Size = new Size(598, 301);
         }
 
         private void Таблица_Упаковки_семян_Click(object sender, EventArgs e)
         {
             Tob(1);
-            a = true;
+            Фотография_представителя_PictureBox2.Visible = false;
+            Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
         private void Покупатель_Load(object sender, EventArgs e)
@@ -93,6 +95,16 @@ namespace УП01_ИСПП5_Швидко_ИА
         private void Покупатель_MouseDown(object sender, MouseEventArgs e)
         {
             Mouse = new Point(e.X, e.Y);
+        }
+        string pic;
+        private void Поле_для_таблиц_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                pic = Поле_для_таблиц_DataGridView1.Rows[Поле_для_таблиц_DataGridView1.SelectedCells[0].RowIndex].Cells[6].Value.ToString();
+                Фотография_представителя_PictureBox2.Image = Image.FromFile(pic);
+            }
+            catch { }
         }
     }
 }
