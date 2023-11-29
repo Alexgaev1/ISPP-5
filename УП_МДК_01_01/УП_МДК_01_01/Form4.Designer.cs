@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,14 +88,14 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn,
@@ -108,80 +108,100 @@
             this.дополнительныеУсловияDataGridViewTextBoxColumn,
             this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.договорыBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 27);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView1.Size = new System.Drawing.Size(942, 150);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1256, 185);
             this.dataGridView1.TabIndex = 0;
             // 
             // регистрационныйНомерДоговораDataGridViewTextBoxColumn
             // 
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn.DataPropertyName = "Регистрационный номер договора";
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn.HeaderText = "Регистрационный номер договора";
+            this.регистрационныйНомерДоговораDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn.Name = "регистрационныйНомерДоговораDataGridViewTextBoxColumn";
+            this.регистрационныйНомерДоговораDataGridViewTextBoxColumn.Width = 125;
             // 
             // регистрационныйНомерDataGridViewTextBoxColumn
             // 
             this.регистрационныйНомерDataGridViewTextBoxColumn.DataPropertyName = "Регистрационный номер";
             this.регистрационныйНомерDataGridViewTextBoxColumn.HeaderText = "Регистрационный номер";
+            this.регистрационныйНомерDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.регистрационныйНомерDataGridViewTextBoxColumn.Name = "регистрационныйНомерDataGridViewTextBoxColumn";
+            this.регистрационныйНомерDataGridViewTextBoxColumn.Width = 125;
             // 
             // кодАгентаDataGridViewTextBoxColumn
             // 
             this.кодАгентаDataGridViewTextBoxColumn.DataPropertyName = "Код агента";
             this.кодАгентаDataGridViewTextBoxColumn.HeaderText = "Код агента";
+            this.кодАгентаDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.кодАгентаDataGridViewTextBoxColumn.Name = "кодАгентаDataGridViewTextBoxColumn";
+            this.кодАгентаDataGridViewTextBoxColumn.Width = 125;
             // 
             // кодКвартирыDataGridViewTextBoxColumn
             // 
             this.кодКвартирыDataGridViewTextBoxColumn.DataPropertyName = "Код квартиры";
             this.кодКвартирыDataGridViewTextBoxColumn.HeaderText = "Код квартиры";
+            this.кодКвартирыDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.кодКвартирыDataGridViewTextBoxColumn.Name = "кодКвартирыDataGridViewTextBoxColumn";
+            this.кодКвартирыDataGridViewTextBoxColumn.Width = 125;
             // 
             // началоДействийДоговораDataGridViewTextBoxColumn
             // 
             this.началоДействийДоговораDataGridViewTextBoxColumn.DataPropertyName = "Начало действий договора";
             this.началоДействийДоговораDataGridViewTextBoxColumn.HeaderText = "Начало действий договора";
+            this.началоДействийДоговораDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.началоДействийДоговораDataGridViewTextBoxColumn.Name = "началоДействийДоговораDataGridViewTextBoxColumn";
+            this.началоДействийДоговораDataGridViewTextBoxColumn.Width = 125;
             // 
             // окончаниеДействийДоговораDataGridViewTextBoxColumn
             // 
             this.окончаниеДействийДоговораDataGridViewTextBoxColumn.DataPropertyName = "Окончание действий договора";
             this.окончаниеДействийДоговораDataGridViewTextBoxColumn.HeaderText = "Окончание действий договора";
+            this.окончаниеДействийДоговораDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.окончаниеДействийДоговораDataGridViewTextBoxColumn.Name = "окончаниеДействийДоговораDataGridViewTextBoxColumn";
+            this.окончаниеДействийДоговораDataGridViewTextBoxColumn.Width = 125;
             // 
             // стоимостьКвартирыDataGridViewTextBoxColumn
             // 
             this.стоимостьКвартирыDataGridViewTextBoxColumn.DataPropertyName = "Стоимость квартиры";
             this.стоимостьКвартирыDataGridViewTextBoxColumn.HeaderText = "Стоимость квартиры";
+            this.стоимостьКвартирыDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.стоимостьКвартирыDataGridViewTextBoxColumn.Name = "стоимостьКвартирыDataGridViewTextBoxColumn";
+            this.стоимостьКвартирыDataGridViewTextBoxColumn.Width = 125;
             // 
             // дополнительныеУсловияDataGridViewTextBoxColumn
             // 
             this.дополнительныеУсловияDataGridViewTextBoxColumn.DataPropertyName = "Дополнительные условия";
             this.дополнительныеУсловияDataGridViewTextBoxColumn.HeaderText = "Дополнительные условия";
+            this.дополнительныеУсловияDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.дополнительныеУсловияDataGridViewTextBoxColumn.Name = "дополнительныеУсловияDataGridViewTextBoxColumn";
+            this.дополнительныеУсловияDataGridViewTextBoxColumn.Width = 125;
             // 
             // вознаграждениеЦентраОценкиDataGridViewTextBoxColumn
             // 
             this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn.DataPropertyName = "Вознаграждение Центра оценки";
             this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn.HeaderText = "Вознаграждение Центра оценки";
+            this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn.Name = "вознаграждениеЦентраОценкиDataGridViewTextBoxColumn";
+            this.вознаграждениеЦентраОценкиDataGridViewTextBoxColumn.Width = 125;
             // 
             // договорыBindingSource
             // 
@@ -199,9 +219,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(703, 183);
+            this.button1.Location = new System.Drawing.Point(937, 225);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.Size = new System.Drawing.Size(163, 28);
             this.button1.TabIndex = 2;
             this.button1.Text = "Обновить";
             this.button1.UseVisualStyleBackColor = true;
@@ -209,9 +230,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(829, 183);
+            this.button2.Location = new System.Drawing.Point(1105, 225);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 23);
+            this.button2.Size = new System.Drawing.Size(163, 28);
             this.button2.TabIndex = 3;
             this.button2.Text = "Вернуться в меню";
             this.button2.UseVisualStyleBackColor = true;
@@ -226,28 +248,36 @@
             this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn,
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.fKПродлениеДоговорыBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 183);
+            this.dataGridView2.Location = new System.Drawing.Point(16, 225);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(345, 150);
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(460, 185);
             this.dataGridView2.TabIndex = 4;
             // 
             // кодПродленияDataGridViewTextBoxColumn
             // 
             this.кодПродленияDataGridViewTextBoxColumn.DataPropertyName = "Код продления";
             this.кодПродленияDataGridViewTextBoxColumn.HeaderText = "Код продления";
+            this.кодПродленияDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.кодПродленияDataGridViewTextBoxColumn.Name = "кодПродленияDataGridViewTextBoxColumn";
+            this.кодПродленияDataGridViewTextBoxColumn.Width = 125;
             // 
             // продлениеСрокаДействияДоговораDataGridViewTextBoxColumn
             // 
             this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn.DataPropertyName = "Продление срока действия договора";
             this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn.HeaderText = "Продление срока действия договора";
+            this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn.Name = "продлениеСрокаДействияДоговораDataGridViewTextBoxColumn";
+            this.продлениеСрокаДействияДоговораDataGridViewTextBoxColumn.Width = 125;
             // 
             // регистрационныйНомерДоговораDataGridViewTextBoxColumn1
             // 
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1.DataPropertyName = "Регистрационный номер договора";
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1.HeaderText = "Регистрационный номер договора";
+            this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1.Name = "регистрационныйНомерДоговораDataGridViewTextBoxColumn1";
+            this.регистрационныйНомерДоговораDataGridViewTextBoxColumn1.Width = 125;
             // 
             // fKПродлениеДоговорыBindingSource
             // 
@@ -260,40 +290,45 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(129, 21);
+            this.textBox6.Location = new System.Drawing.Point(172, 26);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(189, 20);
+            this.textBox6.Size = new System.Drawing.Size(251, 22);
             this.textBox6.TabIndex = 0;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(129, 65);
+            this.textBox5.Location = new System.Drawing.Point(172, 80);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 20);
+            this.textBox5.Size = new System.Drawing.Size(251, 22);
             this.textBox5.TabIndex = 1;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 110);
+            this.textBox4.Location = new System.Drawing.Point(172, 135);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 20);
+            this.textBox4.Size = new System.Drawing.Size(251, 22);
             this.textBox4.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 24);
+            this.label6.Location = new System.Drawing.Point(15, 30);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 13);
+            this.label6.Size = new System.Drawing.Size(125, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "Начало действий ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 68);
+            this.label5.Location = new System.Drawing.Point(15, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 13);
+            this.label5.Size = new System.Drawing.Size(145, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Оканчание действий";
             // 
@@ -305,17 +340,19 @@
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(363, 183);
+            this.panel1.Location = new System.Drawing.Point(484, 225);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 150);
+            this.panel1.Size = new System.Drawing.Size(445, 185);
             this.panel1.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 113);
+            this.label4.Location = new System.Drawing.Point(15, 139);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.Size = new System.Drawing.Size(122, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Продление срока";
             // 
@@ -325,6 +362,7 @@
             this.bindingNavigator1.BindingSource = this.fKПродлениеДоговорыBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -346,7 +384,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(963, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1284, 31);
             this.bindingNavigator1.TabIndex = 6;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -356,14 +394,14 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
-            this.bindingNavigatorCountItem.Font = new System.Drawing.Font("Txt", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bindingNavigatorCountItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(62, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(56, 28);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -373,7 +411,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -382,7 +420,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -391,13 +429,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -405,14 +443,14 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -420,7 +458,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -429,13 +467,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // SaveButton
             // 
@@ -443,7 +481,7 @@
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
             this.SaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(23, 22);
+            this.SaveButton.Size = new System.Drawing.Size(29, 28);
             this.SaveButton.Text = "Save";
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
@@ -453,21 +491,22 @@
             this.CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("CancelButton.Image")));
             this.CancelButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(23, 22);
+            this.CancelButton.Size = new System.Drawing.Size(29, 28);
             this.CancelButton.Text = "Cancel";
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 335);
+            this.ClientSize = new System.Drawing.Size(1284, 412);
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form4";
             this.Text = "Данные о договорах";
             this.Load += new System.EventHandler(this.Form4_Load);
