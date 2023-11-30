@@ -20,14 +20,13 @@ namespace УП01_ИСПП5_Швидко_ИА
             Фотография_представителя_PictureBox2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
-
         public void Tob(int i)
         {
             SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True");
             sqlConnect.Open();
             SqlDataAdapter[] so = new SqlDataAdapter[2];
-            so[0] = new SqlDataAdapter("select Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время from Сорта_растений", sqlConnect);
-            so[1] = new SqlDataAdapter("select Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорта_растения from Упаковки_семян", sqlConnect);
+            so[0] = new SqlDataAdapter("select Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время from Сорта_растений", sqlConnect);
+            so[1] = new SqlDataAdapter("select Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_растения from Упаковки_семян", sqlConnect);
             DataSet ps = new DataSet();
             so[i].Fill(ps);
             Поле_для_таблиц_DataGridView1.DataSource = ps.Tables[0];

@@ -48,7 +48,11 @@
             this.Строка_поиска_TextBox1 = new System.Windows.Forms.TextBox();
             this.Поиск_Label1 = new System.Windows.Forms.Label();
             this.Фотография_представителя_PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
             this.уП01_ИСПП5_Швидко_ИАDataSet = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSet();
+            this.сортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter();
             this.новыесортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.новые_сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Новые_сорта_растенийTableAdapter();
             this.оптовыепокупателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -61,25 +65,21 @@
             this.продавцыTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.ПродавцыTableAdapter();
             this.продажиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.продажиTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.ПродажиTableAdapter();
-            this.сортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter();
             this.упаковкисемянBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.упаковки_семянTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
             this.Найти_фото_roundBtn2 = new Ремонт_пассажирских_вагонов.RoundBtn();
             ((System.ComponentModel.ISupportInitialize)(this.Поле_для_таблиц_DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).BeginInit();
             this.Строка_меню_MenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.новыесортарастенийBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.оптовыепокупателиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.покупателиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.пользователиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.продавцыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.упаковкисемянBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,7 +231,7 @@
             // 
             // Строка_поиска_TextBox1
             // 
-            this.Строка_поиска_TextBox1.Location = new System.Drawing.Point(176, 1);
+            this.Строка_поиска_TextBox1.Location = new System.Drawing.Point(176, 2);
             this.Строка_поиска_TextBox1.Name = "Строка_поиска_TextBox1";
             this.Строка_поиска_TextBox1.Size = new System.Drawing.Size(163, 20);
             this.Строка_поиска_TextBox1.TabIndex = 26;
@@ -250,7 +250,7 @@
             // Фотография_представителя_PictureBox2
             // 
             this.Фотография_представителя_PictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.Фотография_представителя_PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Фотография_представителя_PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Фотография_представителя_PictureBox2.Location = new System.Drawing.Point(617, 33);
             this.Фотография_представителя_PictureBox2.Name = "Фотография_представителя_PictureBox2";
             this.Фотография_представителя_PictureBox2.Size = new System.Drawing.Size(191, 190);
@@ -258,10 +258,31 @@
             this.Фотография_представителя_PictureBox2.TabIndex = 28;
             this.Фотография_представителя_PictureBox2.TabStop = false;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(730, 326);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 31;
+            // 
             // уП01_ИСПП5_Швидко_ИАDataSet
             // 
             this.уП01_ИСПП5_Швидко_ИАDataSet.DataSetName = "УП01_ИСПП5_Швидко_ИАDataSet";
             this.уП01_ИСПП5_Швидко_ИАDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // сортарастенийBindingSource
+            // 
+            this.сортарастенийBindingSource.DataMember = "Сорта_растений";
+            this.сортарастенийBindingSource.DataSource = this.уП01_ИСПП5_Швидко_ИАDataSet;
+            // 
+            // сорта_растенийTableAdapter
+            // 
+            this.сорта_растенийTableAdapter.ClearBeforeFill = true;
             // 
             // новыесортарастенийBindingSource
             // 
@@ -317,15 +338,6 @@
             // 
             this.продажиTableAdapter.ClearBeforeFill = true;
             // 
-            // сортарастенийBindingSource
-            // 
-            this.сортарастенийBindingSource.DataMember = "Сорта_растений";
-            this.сортарастенийBindingSource.DataSource = this.уП01_ИСПП5_Швидко_ИАDataSet;
-            // 
-            // сорта_растенийTableAdapter
-            // 
-            this.сорта_растенийTableAdapter.ClearBeforeFill = true;
-            // 
             // упаковкисемянBindingSource
             // 
             this.упаковкисемянBindingSource.DataMember = "Упаковки_семян";
@@ -335,25 +347,13 @@
             // 
             this.упаковки_семянTableAdapter.ClearBeforeFill = true;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(730, 326);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 31;
-            // 
             // Найти_фото_roundBtn2
             // 
             this.Найти_фото_roundBtn2.BackColor = System.Drawing.Color.LightYellow;
-            this.Найти_фото_roundBtn2.Location = new System.Drawing.Point(677, 229);
+            this.Найти_фото_roundBtn2.Location = new System.Drawing.Point(667, 229);
             this.Найти_фото_roundBtn2.Name = "Найти_фото_roundBtn2";
             this.Найти_фото_roundBtn2.Radius = 10;
-            this.Найти_фото_roundBtn2.Size = new System.Drawing.Size(75, 26);
+            this.Найти_фото_roundBtn2.Size = new System.Drawing.Size(91, 26);
             this.Найти_фото_roundBtn2.TabIndex = 33;
             this.Найти_фото_roundBtn2.Text = "Найти фото";
             this.Найти_фото_roundBtn2.Click += new System.EventHandler(this.Найти_фото_Click);
@@ -363,14 +363,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(819, 348);
+            this.ClientSize = new System.Drawing.Size(819, 346);
+            this.Controls.Add(this.Поле_для_таблиц_DataGridView1);
             this.Controls.Add(this.Найти_фото_roundBtn2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.выйти_PictureBox1);
             this.Controls.Add(this.Поиск_Label1);
             this.Controls.Add(this.Строка_поиска_TextBox1);
             this.Controls.Add(this.Фотография_представителя_PictureBox2);
-            this.Controls.Add(this.Поле_для_таблиц_DataGridView1);
             this.Controls.Add(this.Строка_меню_MenuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.Строка_меню_MenuStrip1;
@@ -387,13 +387,13 @@
             this.Строка_меню_MenuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.новыесортарастенийBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.оптовыепокупателиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.покупателиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.пользователиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.продавцыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.упаковкисемянBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -419,7 +419,12 @@
         private System.Windows.Forms.TextBox Строка_поиска_TextBox1;
         private System.Windows.Forms.Label Поиск_Label1;
         private System.Windows.Forms.PictureBox Фотография_представителя_PictureBox2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private Ремонт_пассажирских_вагонов.RoundBtn Найти_фото_roundBtn2;
         private УП01_ИСПП5_Швидко_ИАDataSet уП01_ИСПП5_Швидко_ИАDataSet;
+        private System.Windows.Forms.BindingSource сортарастенийBindingSource;
+        private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter сорта_растенийTableAdapter;
         private System.Windows.Forms.BindingSource новыесортарастенийBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Новые_сорта_растенийTableAdapter новые_сорта_растенийTableAdapter;
         private System.Windows.Forms.BindingSource оптовыепокупателиBindingSource;
@@ -432,13 +437,8 @@
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.ПродавцыTableAdapter продавцыTableAdapter;
         private System.Windows.Forms.BindingSource продажиBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.ПродажиTableAdapter продажиTableAdapter;
-        private System.Windows.Forms.BindingSource сортарастенийBindingSource;
-        private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter сорта_растенийTableAdapter;
         private System.Windows.Forms.BindingSource упаковкисемянBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter упаковки_семянTableAdapter;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label1;
-        private Ремонт_пассажирских_вагонов.RoundBtn Найти_фото_roundBtn2;
     }
 }
 

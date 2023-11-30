@@ -26,8 +26,8 @@ namespace УП01_ИСПП5_Швидко_ИА
             SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True");
             sqlConnect.Open();
             SqlDataAdapter[] so = new SqlDataAdapter[2];
-            so[0] = new SqlDataAdapter("select Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время from Сорта_растений", sqlConnect);
-            so[1] = new SqlDataAdapter("select Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорта_растения from Упаковки_семян", sqlConnect);
+            so[0] = new SqlDataAdapter("select Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время from Сорта_растений", sqlConnect);
+            so[1] = new SqlDataAdapter("select Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_растения from Упаковки_семян", sqlConnect);
             DataSet ps = new DataSet();
             so[i].Fill(ps);
             Поле_для_таблиц_DataGridView1.DataSource = ps.Tables[0];
@@ -39,7 +39,6 @@ namespace УП01_ИСПП5_Швидко_ИА
             // TODO: данная строка кода позволяет загрузить данные в таблицу "уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений". При необходимости она может быть перемещена или удалена.
             this.сорта_растенийTableAdapter.Fill(this.уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян". При необходимости она может быть перемещена или удалена.
-
         }
 
         private void вернуться_Click(object sender, EventArgs e)
@@ -97,7 +96,8 @@ namespace УП01_ИСПП5_Швидко_ИА
             Mouse = new Point(e.X, e.Y);
         }
         string pic;
-        private void Поле_для_таблиц_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void Поле_для_таблиц_DataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             try
             {

@@ -2423,7 +2423,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             private global::System.Data.DataColumn columnСпособ_посадки;
             
-            private global::System.Data.DataColumn columnФотография_представителя_сорта;
+            private global::System.Data.DataColumn columnФотография;
             
             private global::System.Data.DataColumn columnСрок_созревания_в_днях;
             
@@ -2522,9 +2522,9 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Фотография_представителя_сортаColumn {
+            public global::System.Data.DataColumn ФотографияColumn {
                 get {
-                    return this.columnФотография_представителя_сорта;
+                    return this.columnФотография;
                 }
             }
             
@@ -2589,7 +2589,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Сорта_растенийRow AddСорта_растенийRow(int Код_сорта_растения, string Название_растения, string Название_сорта, System.DateTime Год_выведения, bool Адаптация, bool Морозоустойчивость, string Способ_посадки, string Фотография_представителя_сорта, int Срок_созревания_в_днях, string Примечание, bool Наличие_в_текущее_время) {
+            public Сорта_растенийRow AddСорта_растенийRow(int Код_сорта_растения, string Название_растения, string Название_сорта, System.DateTime Год_выведения, bool Адаптация, bool Морозоустойчивость, string Способ_посадки, string Фотография, int Срок_созревания_в_днях, string Примечание, bool Наличие_в_текущее_время) {
                 Сорта_растенийRow rowСорта_растенийRow = ((Сорта_растенийRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Код_сорта_растения,
@@ -2599,7 +2599,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                         Адаптация,
                         Морозоустойчивость,
                         Способ_посадки,
-                        Фотография_представителя_сорта,
+                        Фотография,
                         Срок_созревания_в_днях,
                         Примечание,
                         Наличие_в_текущее_время};
@@ -2639,7 +2639,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 this.columnАдаптация = base.Columns["Адаптация"];
                 this.columnМорозоустойчивость = base.Columns["Морозоустойчивость"];
                 this.columnСпособ_посадки = base.Columns["Способ_посадки"];
-                this.columnФотография_представителя_сорта = base.Columns["Фотография_представителя_сорта"];
+                this.columnФотография = base.Columns["Фотография"];
                 this.columnСрок_созревания_в_днях = base.Columns["Срок_созревания_в_днях"];
                 this.columnПримечание = base.Columns["Примечание"];
                 this.columnНаличие_в_текущее_время = base.Columns["Наличие_в_текущее_время"];
@@ -2662,8 +2662,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 base.Columns.Add(this.columnМорозоустойчивость);
                 this.columnСпособ_посадки = new global::System.Data.DataColumn("Способ_посадки", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnСпособ_посадки);
-                this.columnФотография_представителя_сорта = new global::System.Data.DataColumn("Фотография_представителя_сорта", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnФотография_представителя_сорта);
+                this.columnФотография = new global::System.Data.DataColumn("Фотография", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnФотография);
                 this.columnСрок_созревания_в_днях = new global::System.Data.DataColumn("Срок_созревания_в_днях", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnСрок_созревания_в_днях);
                 this.columnПримечание = new global::System.Data.DataColumn("Примечание", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2677,7 +2677,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 this.columnНазвание_растения.MaxLength = 50;
                 this.columnНазвание_сорта.MaxLength = 50;
                 this.columnСпособ_посадки.MaxLength = 2147483647;
-                this.columnФотография_представителя_сорта.MaxLength = 2147483647;
+                this.columnФотография.MaxLength = 2147483647;
                 this.columnПримечание.MaxLength = 2147483647;
             }
             
@@ -2826,7 +2826,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             private global::System.Data.DataColumn columnДата_расфасовки;
             
-            private global::System.Data.DataColumn columnВес_семян_в_упаковке;
+            private global::System.Data.DataColumn columnВес_семян_в_граммах;
             
             private global::System.Data.DataColumn columnКод_сорта_растения;
             
@@ -2921,9 +2921,9 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Вес_семян_в_упаковкеColumn {
+            public global::System.Data.DataColumn Вес_семян_в_граммахColumn {
                 get {
-                    return this.columnВес_семян_в_упаковке;
+                    return this.columnВес_семян_в_граммах;
                 }
             }
             
@@ -2972,7 +2972,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Упаковки_семянRow AddУпаковки_семянRow(int Код_упаковки_семян, System.DateTime Срок_годности, bool Одобрено_инспекцией, string Вид_упаковки, int Количество_в_упаковке, decimal Цена, System.DateTime Дата_расфасовки, int Вес_семян_в_упаковке, Сорта_растенийRow parentСорта_растенийRowByFK1) {
+            public Упаковки_семянRow AddУпаковки_семянRow(int Код_упаковки_семян, System.DateTime Срок_годности, bool Одобрено_инспекцией, string Вид_упаковки, int Количество_в_упаковке, decimal Цена, System.DateTime Дата_расфасовки, int Вес_семян_в_граммах, Сорта_растенийRow parentСорта_растенийRowByFK1) {
                 Упаковки_семянRow rowУпаковки_семянRow = ((Упаковки_семянRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Код_упаковки_семян,
@@ -2982,7 +2982,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                         Количество_в_упаковке,
                         Цена,
                         Дата_расфасовки,
-                        Вес_семян_в_упаковке,
+                        Вес_семян_в_граммах,
                         null};
                 if ((parentСорта_растенийRowByFK1 != null)) {
                     columnValuesArray[8] = parentСорта_растенийRowByFK1[0];
@@ -3023,7 +3023,7 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 this.columnКоличество_в_упаковке = base.Columns["Количество_в_упаковке"];
                 this.columnЦена = base.Columns["Цена"];
                 this.columnДата_расфасовки = base.Columns["Дата_расфасовки"];
-                this.columnВес_семян_в_упаковке = base.Columns["Вес_семян_в_упаковке"];
+                this.columnВес_семян_в_граммах = base.Columns["Вес_семян_в_граммах"];
                 this.columnКод_сорта_растения = base.Columns["Код_сорта_растения"];
             }
             
@@ -3044,8 +3044,8 @@ namespace УП01_ИСПП5_Швидко_ИА {
                 base.Columns.Add(this.columnЦена);
                 this.columnДата_расфасовки = new global::System.Data.DataColumn("Дата_расфасовки", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnДата_расфасовки);
-                this.columnВес_семян_в_упаковке = new global::System.Data.DataColumn("Вес_семян_в_упаковке", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnВес_семян_в_упаковке);
+                this.columnВес_семян_в_граммах = new global::System.Data.DataColumn("Вес_семян_в_граммах", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВес_семян_в_граммах);
                 this.columnКод_сорта_растения = new global::System.Data.DataColumn("Код_сорта_растения", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnКод_сорта_растения);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -4083,18 +4083,17 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Фотография_представителя_сорта {
+            public string Фотография {
                 get {
                     try {
-                        return ((string)(this[this.tableСорта_растений.Фотография_представителя_сортаColumn]));
+                        return ((string)(this[this.tableСорта_растений.ФотографияColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Фотография_представителя_сорта\' в таблице \'Сорта_растений\' " +
-                                "равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Фотография\' в таблице \'Сорта_растений\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableСорта_растений.Фотография_представителя_сортаColumn] = value;
+                    this[this.tableСорта_растений.ФотографияColumn] = value;
                 }
             }
             
@@ -4222,14 +4221,14 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsФотография_представителя_сортаNull() {
-                return this.IsNull(this.tableСорта_растений.Фотография_представителя_сортаColumn);
+            public bool IsФотографияNull() {
+                return this.IsNull(this.tableСорта_растений.ФотографияColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetФотография_представителя_сортаNull() {
-                this[this.tableСорта_растений.Фотография_представителя_сортаColumn] = global::System.Convert.DBNull;
+            public void SetФотографияNull() {
+                this[this.tableСорта_растений.ФотографияColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4416,18 +4415,18 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Вес_семян_в_упаковке {
+            public int Вес_семян_в_граммах {
                 get {
                     try {
-                        return ((int)(this[this.tableУпаковки_семян.Вес_семян_в_упаковкеColumn]));
+                        return ((int)(this[this.tableУпаковки_семян.Вес_семян_в_граммахColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Вес_семян_в_упаковке\' в таблице \'Упаковки_семян\' равно DBNu" +
-                                "ll.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Вес_семян_в_граммах\' в таблице \'Упаковки_семян\' равно DBNul" +
+                                "l.", e);
                     }
                 }
                 set {
-                    this[this.tableУпаковки_семян.Вес_семян_в_упаковкеColumn] = value;
+                    this[this.tableУпаковки_семян.Вес_семян_в_граммахColumn] = value;
                 }
             }
             
@@ -4533,14 +4532,14 @@ namespace УП01_ИСПП5_Швидко_ИА {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsВес_семян_в_упаковкеNull() {
-                return this.IsNull(this.tableУпаковки_семян.Вес_семян_в_упаковкеColumn);
+            public bool IsВес_семян_в_граммахNull() {
+                return this.IsNull(this.tableУпаковки_семян.Вес_семян_в_граммахColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetВес_семян_в_упаковкеNull() {
-                this[this.tableУпаковки_семян.Вес_семян_в_упаковкеColumn] = global::System.Convert.DBNull;
+            public void SetВес_семян_в_граммахNull() {
+                this[this.tableУпаковки_семян.Вес_семян_в_граммахColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7377,7 +7376,7 @@ SELECT Код_продажи, Код_покупателя, Код_упаковк
             tableMapping.ColumnMappings.Add("Адаптация", "Адаптация");
             tableMapping.ColumnMappings.Add("Морозоустойчивость", "Морозоустойчивость");
             tableMapping.ColumnMappings.Add("Способ_посадки", "Способ_посадки");
-            tableMapping.ColumnMappings.Add("Фотография_представителя_сорта", "Фотография_представителя_сорта");
+            tableMapping.ColumnMappings.Add("Фотография", "Фотография");
             tableMapping.ColumnMappings.Add("Срок_созревания_в_днях", "Срок_созревания_в_днях");
             tableMapping.ColumnMappings.Add("Примечание", "Примечание");
             tableMapping.ColumnMappings.Add("Наличие_в_текущее_время", "Наличие_в_текущее_время");
@@ -7403,8 +7402,8 @@ SELECT Код_продажи, Код_покупателя, Код_упаковк
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Сорта_растений] ([Код_сорта_растения], [Название_растения], [Название_сорта], [Год_выведения], [Адаптация], [Морозоустойчивость], [Способ_посадки], [Фотография_представителя_сорта], [Срок_созревания_в_днях], [Примечание], [Наличие_в_текущее_время]) VALUES (@Код_сорта_растения, @Название_растения, @Название_сорта, @Год_выведения, @Адаптация, @Морозоустойчивость, @Способ_посадки, @Фотография_представителя_сорта, @Срок_созревания_в_днях, @Примечание, @Наличие_в_текущее_время);
-SELECT Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время FROM Сорта_растений WHERE (Код_сорта_растения = @Код_сорта_растения)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Сорта_растений] ([Код_сорта_растения], [Название_растения], [Название_сорта], [Год_выведения], [Адаптация], [Морозоустойчивость], [Способ_посадки], [Фотография], [Срок_созревания_в_днях], [Примечание], [Наличие_в_текущее_время]) VALUES (@Код_сорта_растения, @Название_растения, @Название_сорта, @Год_выведения, @Адаптация, @Морозоустойчивость, @Способ_посадки, @Фотография, @Срок_созревания_в_днях, @Примечание, @Наличие_в_текущее_время);
+SELECT Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время FROM Сорта_растений WHERE (Код_сорта_растения = @Код_сорта_растения)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7413,7 +7412,7 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Способ_посадки", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Способ_посадки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография_представителя_сорта", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография_представителя_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Примечание", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Примечание", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7422,25 +7421,24 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Сорта_растений] SET [Код_сорта_растения] = @Код_сорта_растения, [На" +
                 "звание_растения] = @Название_растения, [Название_сорта] = @Название_сорта, [Год_" +
                 "выведения] = @Год_выведения, [Адаптация] = @Адаптация, [Морозоустойчивость] = @М" +
-                "орозоустойчивость, [Способ_посадки] = @Способ_посадки, [Фотография_представителя" +
-                "_сорта] = @Фотография_представителя_сорта, [Срок_созревания_в_днях] = @Срок_созр" +
-                "евания_в_днях, [Примечание] = @Примечание, [Наличие_в_текущее_время] = @Наличие_" +
-                "в_текущее_время WHERE (([Код_сорта_растения] = @Original_Код_сорта_растения) AND" +
-                " ((@IsNull_Название_растения = 1 AND [Название_растения] IS NULL) OR ([Название_" +
-                "растения] = @Original_Название_растения)) AND ((@IsNull_Название_сорта = 1 AND [" +
-                "Название_сорта] IS NULL) OR ([Название_сорта] = @Original_Название_сорта)) AND (" +
-                "(@IsNull_Год_выведения = 1 AND [Год_выведения] IS NULL) OR ([Год_выведения] = @O" +
-                "riginal_Год_выведения)) AND ((@IsNull_Адаптация = 1 AND [Адаптация] IS NULL) OR " +
-                "([Адаптация] = @Original_Адаптация)) AND ((@IsNull_Морозоустойчивость = 1 AND [М" +
-                "орозоустойчивость] IS NULL) OR ([Морозоустойчивость] = @Original_Морозоустойчиво" +
-                "сть)) AND ((@IsNull_Срок_созревания_в_днях = 1 AND [Срок_созревания_в_днях] IS N" +
-                "ULL) OR ([Срок_созревания_в_днях] = @Original_Срок_созревания_в_днях)) AND ((@Is" +
-                "Null_Наличие_в_текущее_время = 1 AND [Наличие_в_текущее_время] IS NULL) OR ([Нал" +
-                "ичие_в_текущее_время] = @Original_Наличие_в_текущее_время)));\r\nSELECT Код_сорта_" +
-                "растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоуст" +
-                "ойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_дня" +
-                "х, Примечание, Наличие_в_текущее_время FROM Сорта_растений WHERE (Код_сорта_раст" +
-                "ения = @Код_сорта_растения)";
+                "орозоустойчивость, [Способ_посадки] = @Способ_посадки, [Фотография] = @Фотографи" +
+                "я, [Срок_созревания_в_днях] = @Срок_созревания_в_днях, [Примечание] = @Примечани" +
+                "е, [Наличие_в_текущее_время] = @Наличие_в_текущее_время WHERE (([Код_сорта_расте" +
+                "ния] = @Original_Код_сорта_растения) AND ((@IsNull_Название_растения = 1 AND [На" +
+                "звание_растения] IS NULL) OR ([Название_растения] = @Original_Название_растения)" +
+                ") AND ((@IsNull_Название_сорта = 1 AND [Название_сорта] IS NULL) OR ([Название_с" +
+                "орта] = @Original_Название_сорта)) AND ((@IsNull_Год_выведения = 1 AND [Год_выве" +
+                "дения] IS NULL) OR ([Год_выведения] = @Original_Год_выведения)) AND ((@IsNull_Ад" +
+                "аптация = 1 AND [Адаптация] IS NULL) OR ([Адаптация] = @Original_Адаптация)) AND" +
+                " ((@IsNull_Морозоустойчивость = 1 AND [Морозоустойчивость] IS NULL) OR ([Морозоу" +
+                "стойчивость] = @Original_Морозоустойчивость)) AND ((@IsNull_Срок_созревания_в_дн" +
+                "ях = 1 AND [Срок_созревания_в_днях] IS NULL) OR ([Срок_созревания_в_днях] = @Ori" +
+                "ginal_Срок_созревания_в_днях)) AND ((@IsNull_Наличие_в_текущее_время = 1 AND [На" +
+                "личие_в_текущее_время] IS NULL) OR ([Наличие_в_текущее_время] = @Original_Наличи" +
+                "е_в_текущее_время)));\r\nSELECT Код_сорта_растения, Название_растения, Название_со" +
+                "рта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография, С" +
+                "рок_созревания_в_днях, Примечание, Наличие_в_текущее_время FROM Сорта_растений W" +
+                "HERE (Код_сорта_растения = @Код_сорта_растения)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_растения", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7449,7 +7447,7 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Адаптация", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Адаптация", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Морозоустойчивость", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Морозоустойчивость", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Способ_посадки", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Способ_посадки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография_представителя_сорта", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография_представителя_сорта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фотография", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фотография", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_созревания_в_днях", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_созревания_в_днях", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Примечание", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Примечание", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Наличие_в_текущее_время", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Наличие_в_текущее_время", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7484,8 +7482,8 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адап" +
-                "тация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_" +
-                "созревания_в_днях, Примечание, Наличие_в_текущее_время FROM dbo.Сорта_растений";
+                "тация, Морозоустойчивость, Способ_посадки, Фотография, Срок_созревания_в_днях, П" +
+                "римечание, Наличие_в_текущее_время FROM dbo.Сорта_растений";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7624,7 +7622,7 @@ SELECT Код_сорта_растения, Название_растения, Н
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Код_сорта_растения, string Название_растения, string Название_сорта, global::System.Nullable<global::System.DateTime> Год_выведения, global::System.Nullable<bool> Адаптация, global::System.Nullable<bool> Морозоустойчивость, string Способ_посадки, string Фотография_представителя_сорта, global::System.Nullable<int> Срок_созревания_в_днях, string Примечание, global::System.Nullable<bool> Наличие_в_текущее_время) {
+        public virtual int Insert(int Код_сорта_растения, string Название_растения, string Название_сорта, global::System.Nullable<global::System.DateTime> Год_выведения, global::System.Nullable<bool> Адаптация, global::System.Nullable<bool> Морозоустойчивость, string Способ_посадки, string Фотография, global::System.Nullable<int> Срок_созревания_в_днях, string Примечание, global::System.Nullable<bool> Наличие_в_текущее_время) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Код_сорта_растения));
             if ((Название_растения == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7662,11 +7660,11 @@ SELECT Код_сорта_растения, Название_растения, Н
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Способ_посадки));
             }
-            if ((Фотография_представителя_сорта == null)) {
+            if ((Фотография == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Фотография_представителя_сорта));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Фотография));
             }
             if ((Срок_созревания_в_днях.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = ((int)(Срок_созревания_в_днях.Value));
@@ -7714,7 +7712,7 @@ SELECT Код_сорта_растения, Название_растения, Н
                     global::System.Nullable<bool> Адаптация, 
                     global::System.Nullable<bool> Морозоустойчивость, 
                     string Способ_посадки, 
-                    string Фотография_представителя_сорта, 
+                    string Фотография, 
                     global::System.Nullable<int> Срок_созревания_в_днях, 
                     string Примечание, 
                     global::System.Nullable<bool> Наличие_в_текущее_время, 
@@ -7763,11 +7761,11 @@ SELECT Код_сорта_растения, Название_растения, Н
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Способ_посадки));
             }
-            if ((Фотография_представителя_сорта == null)) {
+            if ((Фотография == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Фотография_представителя_сорта));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Фотография));
             }
             if ((Срок_созревания_в_днях.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Срок_созревания_в_днях.Value));
@@ -7871,7 +7869,7 @@ SELECT Код_сорта_растения, Название_растения, Н
                     global::System.Nullable<bool> Адаптация, 
                     global::System.Nullable<bool> Морозоустойчивость, 
                     string Способ_посадки, 
-                    string Фотография_представителя_сорта, 
+                    string Фотография, 
                     global::System.Nullable<int> Срок_созревания_в_днях, 
                     string Примечание, 
                     global::System.Nullable<bool> Наличие_в_текущее_время, 
@@ -7883,7 +7881,7 @@ SELECT Код_сорта_растения, Название_растения, Н
                     global::System.Nullable<bool> Original_Морозоустойчивость, 
                     global::System.Nullable<int> Original_Срок_созревания_в_днях, 
                     global::System.Nullable<bool> Original_Наличие_в_текущее_время) {
-            return this.Update(Original_Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография_представителя_сорта, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время, Original_Код_сорта_растения, Original_Название_растения, Original_Название_сорта, Original_Год_выведения, Original_Адаптация, Original_Морозоустойчивость, Original_Срок_созревания_в_днях, Original_Наличие_в_текущее_время);
+            return this.Update(Original_Код_сорта_растения, Название_растения, Название_сорта, Год_выведения, Адаптация, Морозоустойчивость, Способ_посадки, Фотография, Срок_созревания_в_днях, Примечание, Наличие_в_текущее_время, Original_Код_сорта_растения, Original_Название_растения, Original_Название_сорта, Original_Год_выведения, Original_Адаптация, Original_Морозоустойчивость, Original_Срок_созревания_в_днях, Original_Наличие_в_текущее_время);
         }
     }
     
@@ -8015,12 +8013,12 @@ SELECT Код_сорта_растения, Название_растения, Н
             tableMapping.ColumnMappings.Add("Количество_в_упаковке", "Количество_в_упаковке");
             tableMapping.ColumnMappings.Add("Цена", "Цена");
             tableMapping.ColumnMappings.Add("Дата_расфасовки", "Дата_расфасовки");
-            tableMapping.ColumnMappings.Add("Вес_семян_в_упаковке", "Вес_семян_в_упаковке");
+            tableMapping.ColumnMappings.Add("Вес_семян_в_граммах", "Вес_семян_в_граммах");
             tableMapping.ColumnMappings.Add("Код_сорта_растения", "Код_сорта_растения");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Упаковки_семян] WHERE (([Код_упаковки_семян] = @Original_Код_упаковки_семян) AND ((@IsNull_Срок_годности = 1 AND [Срок_годности] IS NULL) OR ([Срок_годности] = @Original_Срок_годности)) AND ((@IsNull_Одобрено_инспекцией = 1 AND [Одобрено_инспекцией] IS NULL) OR ([Одобрено_инспекцией] = @Original_Одобрено_инспекцией)) AND ((@IsNull_Количество_в_упаковке = 1 AND [Количество_в_упаковке] IS NULL) OR ([Количество_в_упаковке] = @Original_Количество_в_упаковке)) AND ((@IsNull_Цена = 1 AND [Цена] IS NULL) OR ([Цена] = @Original_Цена)) AND ((@IsNull_Дата_расфасовки = 1 AND [Дата_расфасовки] IS NULL) OR ([Дата_расфасовки] = @Original_Дата_расфасовки)) AND ((@IsNull_Вес_семян_в_упаковке = 1 AND [Вес_семян_в_упаковке] IS NULL) OR ([Вес_семян_в_упаковке] = @Original_Вес_семян_в_упаковке)) AND ((@IsNull_Код_сорта_растения = 1 AND [Код_сорта_растения] IS NULL) OR ([Код_сорта_растения] = @Original_Код_сорта_растения)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Упаковки_семян] WHERE (([Код_упаковки_семян] = @Original_Код_упаковки_семян) AND ((@IsNull_Срок_годности = 1 AND [Срок_годности] IS NULL) OR ([Срок_годности] = @Original_Срок_годности)) AND ((@IsNull_Одобрено_инспекцией = 1 AND [Одобрено_инспекцией] IS NULL) OR ([Одобрено_инспекцией] = @Original_Одобрено_инспекцией)) AND ((@IsNull_Количество_в_упаковке = 1 AND [Количество_в_упаковке] IS NULL) OR ([Количество_в_упаковке] = @Original_Количество_в_упаковке)) AND ((@IsNull_Цена = 1 AND [Цена] IS NULL) OR ([Цена] = @Original_Цена)) AND ((@IsNull_Дата_расфасовки = 1 AND [Дата_расфасовки] IS NULL) OR ([Дата_расфасовки] = @Original_Дата_расфасовки)) AND ((@IsNull_Вес_семян_в_граммах = 1 AND [Вес_семян_в_граммах] IS NULL) OR ([Вес_семян_в_граммах] = @Original_Вес_семян_в_граммах)) AND ((@IsNull_Код_сорта_растения = 1 AND [Код_сорта_растения] IS NULL) OR ([Код_сорта_растения] = @Original_Код_сорта_растения)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_упаковки_семян", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_упаковки_семян", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Срок_годности", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_годности", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -8033,14 +8031,14 @@ SELECT Код_сорта_растения, Название_растения, Н
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Цена", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Цена", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Дата_расфасовки", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Дата_расфасовки", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Упаковки_семян] ([Код_упаковки_семян], [Срок_годности], [Одобрено_инспекцией], [Вид_упаковки], [Количество_в_упаковке], [Цена], [Дата_расфасовки], [Вес_семян_в_упаковке], [Код_сорта_растения]) VALUES (@Код_упаковки_семян, @Срок_годности, @Одобрено_инспекцией, @Вид_упаковки, @Количество_в_упаковке, @Цена, @Дата_расфасовки, @Вес_семян_в_упаковке, @Код_сорта_растения);
-SELECT Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорта_растения FROM Упаковки_семян WHERE (Код_упаковки_семян = @Код_упаковки_семян)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Упаковки_семян] ([Код_упаковки_семян], [Срок_годности], [Одобрено_инспекцией], [Вид_упаковки], [Количество_в_упаковке], [Цена], [Дата_расфасовки], [Вес_семян_в_граммах], [Код_сорта_растения]) VALUES (@Код_упаковки_семян, @Срок_годности, @Одобрено_инспекцией, @Вид_упаковки, @Количество_в_упаковке, @Цена, @Дата_расфасовки, @Вес_семян_в_граммах, @Код_сорта_растения);
+SELECT Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_растения FROM Упаковки_семян WHERE (Код_упаковки_семян = @Код_упаковки_семян)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_упаковки_семян", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_упаковки_семян", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_годности", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_годности", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -8049,29 +8047,29 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Количество_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Количество_в_упаковке", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Цена", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Цена", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Дата_расфасовки", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Упаковки_семян] SET [Код_упаковки_семян] = @Код_упаковки_семян, [Ср" +
                 "ок_годности] = @Срок_годности, [Одобрено_инспекцией] = @Одобрено_инспекцией, [Ви" +
                 "д_упаковки] = @Вид_упаковки, [Количество_в_упаковке] = @Количество_в_упаковке, [" +
-                "Цена] = @Цена, [Дата_расфасовки] = @Дата_расфасовки, [Вес_семян_в_упаковке] = @В" +
-                "ес_семян_в_упаковке, [Код_сорта_растения] = @Код_сорта_растения WHERE (([Код_упа" +
-                "ковки_семян] = @Original_Код_упаковки_семян) AND ((@IsNull_Срок_годности = 1 AND" +
-                " [Срок_годности] IS NULL) OR ([Срок_годности] = @Original_Срок_годности)) AND ((" +
-                "@IsNull_Одобрено_инспекцией = 1 AND [Одобрено_инспекцией] IS NULL) OR ([Одобрено" +
-                "_инспекцией] = @Original_Одобрено_инспекцией)) AND ((@IsNull_Количество_в_упаков" +
-                "ке = 1 AND [Количество_в_упаковке] IS NULL) OR ([Количество_в_упаковке] = @Origi" +
-                "nal_Количество_в_упаковке)) AND ((@IsNull_Цена = 1 AND [Цена] IS NULL) OR ([Цена" +
-                "] = @Original_Цена)) AND ((@IsNull_Дата_расфасовки = 1 AND [Дата_расфасовки] IS " +
-                "NULL) OR ([Дата_расфасовки] = @Original_Дата_расфасовки)) AND ((@IsNull_Вес_семя" +
-                "н_в_упаковке = 1 AND [Вес_семян_в_упаковке] IS NULL) OR ([Вес_семян_в_упаковке] " +
-                "= @Original_Вес_семян_в_упаковке)) AND ((@IsNull_Код_сорта_растения = 1 AND [Код" +
-                "_сорта_растения] IS NULL) OR ([Код_сорта_растения] = @Original_Код_сорта_растени" +
-                "я)));\r\nSELECT Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаков" +
-                "ки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорт" +
-                "а_растения FROM Упаковки_семян WHERE (Код_упаковки_семян = @Код_упаковки_семян)";
+                "Цена] = @Цена, [Дата_расфасовки] = @Дата_расфасовки, [Вес_семян_в_граммах] = @Ве" +
+                "с_семян_в_граммах, [Код_сорта_растения] = @Код_сорта_растения WHERE (([Код_упако" +
+                "вки_семян] = @Original_Код_упаковки_семян) AND ((@IsNull_Срок_годности = 1 AND [" +
+                "Срок_годности] IS NULL) OR ([Срок_годности] = @Original_Срок_годности)) AND ((@I" +
+                "sNull_Одобрено_инспекцией = 1 AND [Одобрено_инспекцией] IS NULL) OR ([Одобрено_и" +
+                "нспекцией] = @Original_Одобрено_инспекцией)) AND ((@IsNull_Количество_в_упаковке" +
+                " = 1 AND [Количество_в_упаковке] IS NULL) OR ([Количество_в_упаковке] = @Origina" +
+                "l_Количество_в_упаковке)) AND ((@IsNull_Цена = 1 AND [Цена] IS NULL) OR ([Цена] " +
+                "= @Original_Цена)) AND ((@IsNull_Дата_расфасовки = 1 AND [Дата_расфасовки] IS NU" +
+                "LL) OR ([Дата_расфасовки] = @Original_Дата_расфасовки)) AND ((@IsNull_Вес_семян_" +
+                "в_граммах = 1 AND [Вес_семян_в_граммах] IS NULL) OR ([Вес_семян_в_граммах] = @Or" +
+                "iginal_Вес_семян_в_граммах)) AND ((@IsNull_Код_сорта_растения = 1 AND [Код_сорта" +
+                "_растения] IS NULL) OR ([Код_сорта_растения] = @Original_Код_сорта_растения)));\r" +
+                "\nSELECT Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Ко" +
+                "личество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_расте" +
+                "ния FROM Упаковки_семян WHERE (Код_упаковки_семян = @Код_упаковки_семян)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_упаковки_семян", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_упаковки_семян", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Срок_годности", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_годности", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -8080,7 +8078,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Количество_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Количество_в_упаковке", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Цена", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Цена", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Дата_расфасовки", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_упаковки_семян", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_упаковки_семян", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Срок_годности", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Срок_годности", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -8093,8 +8091,8 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Цена", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Цена", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Дата_расфасовки", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Дата_расфасовки", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_расфасовки", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Вес_семян_в_упаковке", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_упаковке", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Вес_семян_в_граммах", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Вес_семян_в_граммах", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Код_сорта_растения", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Код_сорта_растения", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
@@ -8113,8 +8111,8 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Коли" +
-                "чество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорта_растен" +
-                "ия FROM dbo.Упаковки_семян";
+                "чество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_растени" +
+                "я FROM dbo.Упаковки_семян";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -8175,7 +8173,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Код_упаковки_семян, global::System.Nullable<global::System.DateTime> Original_Срок_годности, global::System.Nullable<bool> Original_Одобрено_инспекцией, global::System.Nullable<int> Original_Количество_в_упаковке, global::System.Nullable<decimal> Original_Цена, global::System.Nullable<global::System.DateTime> Original_Дата_расфасовки, global::System.Nullable<int> Original_Вес_семян_в_упаковке, global::System.Nullable<int> Original_Код_сорта_растения) {
+        public virtual int Delete(int Original_Код_упаковки_семян, global::System.Nullable<global::System.DateTime> Original_Срок_годности, global::System.Nullable<bool> Original_Одобрено_инспекцией, global::System.Nullable<int> Original_Количество_в_упаковке, global::System.Nullable<decimal> Original_Цена, global::System.Nullable<global::System.DateTime> Original_Дата_расфасовки, global::System.Nullable<int> Original_Вес_семян_в_граммах, global::System.Nullable<int> Original_Код_сорта_растения) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_упаковки_семян));
             if ((Original_Срок_годности.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -8217,9 +8215,9 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
-            if ((Original_Вес_семян_в_упаковке.HasValue == true)) {
+            if ((Original_Вес_семян_в_граммах.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_Вес_семян_в_упаковке.Value));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_Вес_семян_в_граммах.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
@@ -8253,7 +8251,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Код_упаковки_семян, global::System.Nullable<global::System.DateTime> Срок_годности, global::System.Nullable<bool> Одобрено_инспекцией, string Вид_упаковки, global::System.Nullable<int> Количество_в_упаковке, global::System.Nullable<decimal> Цена, global::System.Nullable<global::System.DateTime> Дата_расфасовки, global::System.Nullable<int> Вес_семян_в_упаковке, global::System.Nullable<int> Код_сорта_растения) {
+        public virtual int Insert(int Код_упаковки_семян, global::System.Nullable<global::System.DateTime> Срок_годности, global::System.Nullable<bool> Одобрено_инспекцией, string Вид_упаковки, global::System.Nullable<int> Количество_в_упаковке, global::System.Nullable<decimal> Цена, global::System.Nullable<global::System.DateTime> Дата_расфасовки, global::System.Nullable<int> Вес_семян_в_граммах, global::System.Nullable<int> Код_сорта_растения) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Код_упаковки_семян));
             if ((Срок_годности.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(Срок_годности.Value));
@@ -8291,8 +8289,8 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Вес_семян_в_упаковке.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(Вес_семян_в_упаковке.Value));
+            if ((Вес_семян_в_граммах.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(Вес_семян_в_граммах.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
@@ -8331,7 +8329,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                     global::System.Nullable<int> Количество_в_упаковке, 
                     global::System.Nullable<decimal> Цена, 
                     global::System.Nullable<global::System.DateTime> Дата_расфасовки, 
-                    global::System.Nullable<int> Вес_семян_в_упаковке, 
+                    global::System.Nullable<int> Вес_семян_в_граммах, 
                     global::System.Nullable<int> Код_сорта_растения, 
                     int Original_Код_упаковки_семян, 
                     global::System.Nullable<global::System.DateTime> Original_Срок_годности, 
@@ -8339,7 +8337,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                     global::System.Nullable<int> Original_Количество_в_упаковке, 
                     global::System.Nullable<decimal> Original_Цена, 
                     global::System.Nullable<global::System.DateTime> Original_Дата_расфасовки, 
-                    global::System.Nullable<int> Original_Вес_семян_в_упаковке, 
+                    global::System.Nullable<int> Original_Вес_семян_в_граммах, 
                     global::System.Nullable<int> Original_Код_сорта_растения) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Код_упаковки_семян));
             if ((Срок_годности.HasValue == true)) {
@@ -8378,8 +8376,8 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Вес_семян_в_упаковке.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Вес_семян_в_упаковке.Value));
+            if ((Вес_семян_в_граммах.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Вес_семян_в_граммах.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
@@ -8431,9 +8429,9 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
-            if ((Original_Вес_семян_в_упаковке.HasValue == true)) {
+            if ((Original_Вес_семян_в_граммах.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_Вес_семян_в_упаковке.Value));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_Вес_семян_в_граммах.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
@@ -8474,7 +8472,7 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                     global::System.Nullable<int> Количество_в_упаковке, 
                     global::System.Nullable<decimal> Цена, 
                     global::System.Nullable<global::System.DateTime> Дата_расфасовки, 
-                    global::System.Nullable<int> Вес_семян_в_упаковке, 
+                    global::System.Nullable<int> Вес_семян_в_граммах, 
                     global::System.Nullable<int> Код_сорта_растения, 
                     int Original_Код_упаковки_семян, 
                     global::System.Nullable<global::System.DateTime> Original_Срок_годности, 
@@ -8482,9 +8480,9 @@ SELECT Код_упаковки_семян, Срок_годности, Одобр
                     global::System.Nullable<int> Original_Количество_в_упаковке, 
                     global::System.Nullable<decimal> Original_Цена, 
                     global::System.Nullable<global::System.DateTime> Original_Дата_расфасовки, 
-                    global::System.Nullable<int> Original_Вес_семян_в_упаковке, 
+                    global::System.Nullable<int> Original_Вес_семян_в_граммах, 
                     global::System.Nullable<int> Original_Код_сорта_растения) {
-            return this.Update(Original_Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_упаковке, Код_сорта_растения, Original_Код_упаковки_семян, Original_Срок_годности, Original_Одобрено_инспекцией, Original_Количество_в_упаковке, Original_Цена, Original_Дата_расфасовки, Original_Вес_семян_в_упаковке, Original_Код_сорта_растения);
+            return this.Update(Original_Код_упаковки_семян, Срок_годности, Одобрено_инспекцией, Вид_упаковки, Количество_в_упаковке, Цена, Дата_расфасовки, Вес_семян_в_граммах, Код_сорта_растения, Original_Код_упаковки_семян, Original_Срок_годности, Original_Одобрено_инспекцией, Original_Количество_в_упаковке, Original_Цена, Original_Дата_расфасовки, Original_Вес_семян_в_граммах, Original_Код_сорта_растения);
         }
     }
     

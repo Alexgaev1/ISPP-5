@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Reflection;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace УП01_ИСПП5_Швидко_ИА
 {
@@ -18,8 +19,8 @@ namespace УП01_ИСПП5_Швидко_ИА
         public Авторизация()
         {
             InitializeComponent();
-            Видимость_пароля_PictureBox2.Visible = true;
-            Скрыть_пароль_PictureBox3.Visible = false;
+            Видимость_пароля_PictureBox2.Visible = false;
+            Скрыть_пароль_PictureBox3.Visible = true;
         }
 
         private void Кнопка_подтверждения_Click(object sender, EventArgs e)
@@ -38,13 +39,13 @@ namespace УП01_ИСПП5_Швидко_ИА
                 int flag = -1;
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if ((dt.Rows[i]["Права_доступа"].ToString() == "Администратор") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
+                    if ((dt.Rows[i]["Права_Доступа"].ToString() == "Администратор") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
                         flag = 0;
-                    if ((dt.Rows[i]["Права_доступа"].ToString() == "Продавец") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
+                    if ((dt.Rows[i]["Права_Доступа"].ToString() == "Продавец") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
                     {
                         flag = 1;
                     }
-                    if ((dt.Rows[i]["Права_доступа"].ToString() == "Покупатель") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
+                    if ((dt.Rows[i]["Права_Доступа"].ToString() == "Покупатель") && (dt.Rows[i]["Логин"].ToString() == Логин_textBox1.Text) && (dt.Rows[i]["Пароль"].ToString() == Пароль_textBox2.Text))
                     {
                         flag = 2;
                     }
@@ -71,7 +72,7 @@ namespace УП01_ИСПП5_Швидко_ИА
                     }
                 }
                 else
-                    MessageBox.Show("Пересоздайте пользователя! Такого пользователя не существует.");
+                    MessageBox.Show("Пересоздайте пользователя! Такого пользователя не существует.", "Ошибка");
             }
         }
         private void Кнопка_Рагистрация_Click(object sender, EventArgs e)
@@ -90,30 +91,12 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             Application.Exit();
         }
-        private void Видимость_пароля_Click(object sender, EventArgs e)
-        {
-            if (Видимость_пароля_PictureBox2.Visible == true)
-            {
-                Видимость_пароля_PictureBox2.Visible = false;
-                Скрыть_пароль_PictureBox3.Visible = true;
-                Пароль_textBox2.PasswordChar = '\0';
-            }
-        }
-        private void Скрыть_пароль_Click(object sender, EventArgs e)
-        {
-            if (Видимость_пароля_PictureBox2.Visible == false)
-            {
-                Видимость_пароля_PictureBox2.Visible = true;
-                Пароль_textBox2.PasswordChar = '*';
-                Скрыть_пароль_PictureBox3.Visible = false;
-            }
-        }
         private void Пароль_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
             {
                 e.Handled = true;
-                MessageBox.Show("Поле не может содержать буквы");
+                MessageBox.Show("Поле не может содержать буквы", "Ошибка");
             }
         }
         Point Mouse;
@@ -128,6 +111,20 @@ namespace УП01_ИСПП5_Швидко_ИА
         private void Авторизация_MouseDown(object sender, MouseEventArgs e)
         {
             Mouse = new Point(e.X, e.Y);
+        }
+
+        private void Скрыть_пароль_PictureBox3_Click(object sender, EventArgs e)
+        {
+            Пароль_textBox2.UseSystemPasswordChar = false;
+            Видимость_пароля_PictureBox2.Visible = true;
+            Скрыть_пароль_PictureBox3.Visible = false;
+        }
+
+        private void Видимость_пароля_PictureBox2_Click(object sender, EventArgs e)
+        {
+            Пароль_textBox2.UseSystemPasswordChar = true;
+            Видимость_пароля_PictureBox2.Visible = false;
+            Скрыть_пароль_PictureBox3.Visible = true;
         }
     }
 }

@@ -40,19 +40,19 @@
             this.выйти_PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Поиск_Label1 = new System.Windows.Forms.Label();
             this.Строка_поиска_TextBox1 = new System.Windows.Forms.TextBox();
+            this.Фотография_представителя_PictureBox2 = new System.Windows.Forms.PictureBox();
             this.уП01_ИСПП5_Швидко_ИАDataSet = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSet();
             this.сортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter();
             this.упаковкисемянBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.упаковки_семянTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter();
-            this.Фотография_представителя_PictureBox2 = new System.Windows.Forms.PictureBox();
             this.Строка_меню_MenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Поле_для_таблиц_DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.упаковкисемянBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Строка_меню_MenuStrip1
@@ -114,6 +114,7 @@
             this.Поле_для_таблиц_DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.Поле_для_таблиц_DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Поле_для_таблиц_DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Поле_для_таблиц_DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Поле_для_таблиц_DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Поле_для_таблиц_DataGridView1.Location = new System.Drawing.Point(13, 33);
             this.Поле_для_таблиц_DataGridView1.Name = "Поле_для_таблиц_DataGridView1";
@@ -147,11 +148,22 @@
             // 
             // Строка_поиска_TextBox1
             // 
-            this.Строка_поиска_TextBox1.Location = new System.Drawing.Point(176, 1);
+            this.Строка_поиска_TextBox1.Location = new System.Drawing.Point(176, 2);
             this.Строка_поиска_TextBox1.Name = "Строка_поиска_TextBox1";
             this.Строка_поиска_TextBox1.Size = new System.Drawing.Size(163, 20);
             this.Строка_поиска_TextBox1.TabIndex = 30;
             this.Строка_поиска_TextBox1.TextChanged += new System.EventHandler(this.Поисковая_строка_TextChanged);
+            // 
+            // Фотография_представителя_PictureBox2
+            // 
+            this.Фотография_представителя_PictureBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.Фотография_представителя_PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Фотография_представителя_PictureBox2.Location = new System.Drawing.Point(617, 33);
+            this.Фотография_представителя_PictureBox2.Name = "Фотография_представителя_PictureBox2";
+            this.Фотография_представителя_PictureBox2.Size = new System.Drawing.Size(191, 190);
+            this.Фотография_представителя_PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Фотография_представителя_PictureBox2.TabIndex = 35;
+            this.Фотография_представителя_PictureBox2.TabStop = false;
             // 
             // уП01_ИСПП5_Швидко_ИАDataSet
             // 
@@ -175,17 +187,6 @@
             // упаковки_семянTableAdapter
             // 
             this.упаковки_семянTableAdapter.ClearBeforeFill = true;
-            // 
-            // Фотография_представителя_PictureBox2
-            // 
-            this.Фотография_представителя_PictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.Фотография_представителя_PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Фотография_представителя_PictureBox2.Location = new System.Drawing.Point(616, 33);
-            this.Фотография_представителя_PictureBox2.Name = "Фотография_представителя_PictureBox2";
-            this.Фотография_представителя_PictureBox2.Size = new System.Drawing.Size(191, 190);
-            this.Фотография_представителя_PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Фотография_представителя_PictureBox2.TabIndex = 35;
-            this.Фотография_представителя_PictureBox2.TabStop = false;
             // 
             // Покупатель
             // 
@@ -211,10 +212,10 @@
             this.Строка_меню_MenuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Поле_для_таблиц_DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.выйти_PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.уП01_ИСПП5_Швидко_ИАDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.сортарастенийBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.упаковкисемянBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Фотография_представителя_PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,11 +233,11 @@
         private System.Windows.Forms.PictureBox выйти_PictureBox1;
         private System.Windows.Forms.Label Поиск_Label1;
         private System.Windows.Forms.TextBox Строка_поиска_TextBox1;
+        private System.Windows.Forms.PictureBox Фотография_представителя_PictureBox2;
         private УП01_ИСПП5_Швидко_ИАDataSet уП01_ИСПП5_Швидко_ИАDataSet;
         private System.Windows.Forms.BindingSource сортарастенийBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter сорта_растенийTableAdapter;
         private System.Windows.Forms.BindingSource упаковкисемянBindingSource;
         private УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Упаковки_семянTableAdapter упаковки_семянTableAdapter;
-        private System.Windows.Forms.PictureBox Фотография_представителя_PictureBox2;
     }
 }

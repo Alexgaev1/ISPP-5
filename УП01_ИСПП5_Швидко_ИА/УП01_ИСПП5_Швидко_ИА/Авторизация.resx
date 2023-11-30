@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Скрыть_пароль_PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAADZxJREFUeF7tnWtoFFcbx2vNzRtWQZAWL0HTBoWgRmy1CJbUKCh4K4gimA8G/KIo
+        vAAADrwBlbxySQAADZxJREFUeF7tnWtoFFcbx2vNzRtWQZAWL0HTBoWgRmy1CJbUKCh4K4gimA8G/KIo
         NonWQqHG2g+KGlujtUFjNqBiQP0Qk8VIEWOiSNR4+2DI2mpaL0lsvTdGeZ9z9jgd/7tzZnbmnGleO39+
         4M4zz+WcJ9mZMzuz8R2znjz5LcBPRN/NAo8ArYimg8ApQB+i47ECvwBNiHbHFbgG6ED02krgHaAc0WiJ
         ICBALaLLckFMgEJEf3mfZTLHBCjkn+byPstkxAQo5I3O8j7LZHgGqALbyvssk9k5wDtxesr7LBP4B3gh
