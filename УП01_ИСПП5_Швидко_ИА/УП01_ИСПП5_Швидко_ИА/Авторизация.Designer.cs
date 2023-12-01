@@ -159,7 +159,7 @@
             // 
             this.Кнопка_Рагистрация_roundBtn3.BackColor = System.Drawing.Color.LightYellow;
             this.Кнопка_Рагистрация_roundBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.Кнопка_Рагистрация_roundBtn3.Location = new System.Drawing.Point(156, 200);
+            this.Кнопка_Рагистрация_roundBtn3.Location = new System.Drawing.Point(155, 196);
             this.Кнопка_Рагистрация_roundBtn3.Name = "Кнопка_Рагистрация_roundBtn3";
             this.Кнопка_Рагистрация_roundBtn3.Radius = 10;
             this.Кнопка_Рагистрация_roundBtn3.Size = new System.Drawing.Size(100, 27);
@@ -171,7 +171,7 @@
             // 
             this.Кнопка_подтверждения_roundBtn1.BackColor = System.Drawing.Color.LightYellow;
             this.Кнопка_подтверждения_roundBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Кнопка_подтверждения_roundBtn1.Location = new System.Drawing.Point(144, 156);
+            this.Кнопка_подтверждения_roundBtn1.Location = new System.Drawing.Point(144, 152);
             this.Кнопка_подтверждения_roundBtn1.Name = "Кнопка_подтверждения_roundBtn1";
             this.Кнопка_подтверждения_roundBtn1.Radius = 10;
             this.Кнопка_подтверждения_roundBtn1.Size = new System.Drawing.Size(121, 38);

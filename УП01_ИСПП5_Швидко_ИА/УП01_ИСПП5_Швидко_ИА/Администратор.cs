@@ -174,7 +174,6 @@ namespace УП01_ИСПП5_Швидко_ИА
         {
             SqlConnection sqlConnect = new SqlConnection("Data Source = sql; Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True");
             sqlConnect.Open();
-
             OpenFileDialog load = new OpenFileDialog();
             if (load.ShowDialog() == DialogResult.OK)
             {

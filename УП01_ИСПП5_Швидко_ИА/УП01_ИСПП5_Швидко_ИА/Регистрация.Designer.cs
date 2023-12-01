@@ -33,20 +33,20 @@
             this.Логин_label7 = new System.Windows.Forms.Label();
             this.Пароль_textBox4 = new System.Windows.Forms.TextBox();
             this.Пароль_label8 = new System.Windows.Forms.Label();
-            this.Подтвердить_roundBtn1 = new Ремонт_пассажирских_вагонов.RoundBtn();
-            this.Вернуться_roundBtn2 = new Ремонт_пассажирских_вагонов.RoundBtn();
             this.Фон_panel1 = new System.Windows.Forms.Panel();
             this.Почта_label3 = new System.Windows.Forms.Label();
             this.Почта_textBox2 = new System.Windows.Forms.TextBox();
             this.Регистрация_label1 = new System.Windows.Forms.Label();
             this.Выйти_pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Вернуться_roundBtn2 = new Ремонт_пассажирских_вагонов.RoundBtn();
+            this.Подтвердить_roundBtn1 = new Ремонт_пассажирских_вагонов.RoundBtn();
             this.Фон_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Выйти_pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Логин_textBox5
             // 
-            this.Логин_textBox5.Location = new System.Drawing.Point(142, 5);
+            this.Логин_textBox5.Location = new System.Drawing.Point(101, 5);
             this.Логин_textBox5.Name = "Логин_textBox5";
             this.Логин_textBox5.Size = new System.Drawing.Size(153, 20);
             this.Логин_textBox5.TabIndex = 17;
@@ -55,7 +55,7 @@
             // 
             this.Логин_label7.AutoSize = true;
             this.Логин_label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.Логин_label7.Location = new System.Drawing.Point(10, 6);
+            this.Логин_label7.Location = new System.Drawing.Point(20, 6);
             this.Логин_label7.Name = "Логин_label7";
             this.Логин_label7.Size = new System.Drawing.Size(46, 16);
             this.Логин_label7.TabIndex = 18;
@@ -63,7 +63,7 @@
             // 
             // Пароль_textBox4
             // 
-            this.Пароль_textBox4.Location = new System.Drawing.Point(142, 41);
+            this.Пароль_textBox4.Location = new System.Drawing.Point(101, 41);
             this.Пароль_textBox4.Name = "Пароль_textBox4";
             this.Пароль_textBox4.Size = new System.Drawing.Size(153, 20);
             this.Пароль_textBox4.TabIndex = 20;
@@ -73,33 +73,11 @@
             // 
             this.Пароль_label8.AutoSize = true;
             this.Пароль_label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.Пароль_label8.Location = new System.Drawing.Point(10, 41);
+            this.Пароль_label8.Location = new System.Drawing.Point(20, 41);
             this.Пароль_label8.Name = "Пароль_label8";
             this.Пароль_label8.Size = new System.Drawing.Size(56, 16);
             this.Пароль_label8.TabIndex = 19;
             this.Пароль_label8.Text = "Пароль";
-            // 
-            // Подтвердить_roundBtn1
-            // 
-            this.Подтвердить_roundBtn1.BackColor = System.Drawing.Color.LightYellow;
-            this.Подтвердить_roundBtn1.Location = new System.Drawing.Point(135, 183);
-            this.Подтвердить_roundBtn1.Name = "Подтвердить_roundBtn1";
-            this.Подтвердить_roundBtn1.Radius = 10;
-            this.Подтвердить_roundBtn1.Size = new System.Drawing.Size(134, 31);
-            this.Подтвердить_roundBtn1.TabIndex = 23;
-            this.Подтвердить_roundBtn1.Text = "Подтвердить";
-            this.Подтвердить_roundBtn1.Click += new System.EventHandler(this.Кнопка_подтверждения_Click);
-            // 
-            // Вернуться_roundBtn2
-            // 
-            this.Вернуться_roundBtn2.BackColor = System.Drawing.Color.LightYellow;
-            this.Вернуться_roundBtn2.Location = new System.Drawing.Point(5, 4);
-            this.Вернуться_roundBtn2.Name = "Вернуться_roundBtn2";
-            this.Вернуться_roundBtn2.Radius = 10;
-            this.Вернуться_roundBtn2.Size = new System.Drawing.Size(75, 26);
-            this.Вернуться_roundBtn2.TabIndex = 24;
-            this.Вернуться_roundBtn2.Text = "Вернуться";
-            this.Вернуться_roundBtn2.Click += new System.EventHandler(this.Вернуться_Click);
             // 
             // Фон_panel1
             // 
@@ -111,16 +89,16 @@
             this.Фон_panel1.Controls.Add(this.Пароль_label8);
             this.Фон_panel1.Controls.Add(this.Пароль_textBox4);
             this.Фон_panel1.Controls.Add(this.Логин_label7);
-            this.Фон_panel1.Location = new System.Drawing.Point(52, 60);
+            this.Фон_panel1.Location = new System.Drawing.Point(73, 60);
             this.Фон_panel1.Name = "Фон_panel1";
-            this.Фон_panel1.Size = new System.Drawing.Size(307, 110);
+            this.Фон_panel1.Size = new System.Drawing.Size(272, 110);
             this.Фон_panel1.TabIndex = 25;
             // 
             // Почта_label3
             // 
             this.Почта_label3.AutoSize = true;
             this.Почта_label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.Почта_label3.Location = new System.Drawing.Point(10, 77);
+            this.Почта_label3.Location = new System.Drawing.Point(20, 77);
             this.Почта_label3.Name = "Почта_label3";
             this.Почта_label3.Size = new System.Drawing.Size(48, 16);
             this.Почта_label3.TabIndex = 24;
@@ -128,7 +106,7 @@
             // 
             // Почта_textBox2
             // 
-            this.Почта_textBox2.Location = new System.Drawing.Point(142, 76);
+            this.Почта_textBox2.Location = new System.Drawing.Point(101, 76);
             this.Почта_textBox2.Name = "Почта_textBox2";
             this.Почта_textBox2.Size = new System.Drawing.Size(153, 20);
             this.Почта_textBox2.TabIndex = 23;
@@ -155,6 +133,28 @@
             this.Выйти_pictureBox1.TabIndex = 27;
             this.Выйти_pictureBox1.TabStop = false;
             this.Выйти_pictureBox1.Click += new System.EventHandler(this.выйти_Click);
+            // 
+            // Вернуться_roundBtn2
+            // 
+            this.Вернуться_roundBtn2.BackColor = System.Drawing.Color.LightYellow;
+            this.Вернуться_roundBtn2.Location = new System.Drawing.Point(5, 4);
+            this.Вернуться_roundBtn2.Name = "Вернуться_roundBtn2";
+            this.Вернуться_roundBtn2.Radius = 10;
+            this.Вернуться_roundBtn2.Size = new System.Drawing.Size(75, 26);
+            this.Вернуться_roundBtn2.TabIndex = 24;
+            this.Вернуться_roundBtn2.Text = "Вернуться";
+            this.Вернуться_roundBtn2.Click += new System.EventHandler(this.Вернуться_Click);
+            // 
+            // Подтвердить_roundBtn1
+            // 
+            this.Подтвердить_roundBtn1.BackColor = System.Drawing.Color.LightYellow;
+            this.Подтвердить_roundBtn1.Location = new System.Drawing.Point(149, 176);
+            this.Подтвердить_roundBtn1.Name = "Подтвердить_roundBtn1";
+            this.Подтвердить_roundBtn1.Radius = 10;
+            this.Подтвердить_roundBtn1.Size = new System.Drawing.Size(112, 31);
+            this.Подтвердить_roundBtn1.TabIndex = 23;
+            this.Подтвердить_roundBtn1.Text = "Подтвердить";
+            this.Подтвердить_roundBtn1.Click += new System.EventHandler(this.Кнопка_подтверждения_Click);
             // 
             // Регистрация
             // 
