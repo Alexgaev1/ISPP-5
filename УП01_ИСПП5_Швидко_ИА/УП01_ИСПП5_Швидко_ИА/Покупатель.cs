@@ -20,7 +20,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             Фотография_представителя_PictureBox2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
-        public void Tob(int i)
+        public void Tob(int i)             //Добавляет таблицы
         {
             SqlConnection sqlConnect = new SqlConnection("Data Source=sql;Initial Catalog = уП01_ИСПП5_Швидко_ИА; Integrated Security = True");
             sqlConnect.Open();
@@ -32,42 +32,39 @@ namespace УП01_ИСПП5_Швидко_ИА
             Поле_для_таблиц_DataGridView1.DataSource = ps.Tables[0];
         }
 
-        private void вернуться_Click(object sender, EventArgs e)
+        private void вернуться_Click(object sender, EventArgs e)        //Переходит на форму 'Авторизация'
         {
             Авторизация AvtFrm = new Авторизация();
             AvtFrm.Show();
             this.Hide();
         }
 
-        private void Таблица_Сорта_растений_Click(object sender, EventArgs e)
+        private void Таблица_Сорта_растений_Click(object sender, EventArgs e)                   //Открывает таблицу 'Сорта растени'
         {
             Tob(0);
             Фотография_представителя_PictureBox2.Visible = true;
             Поле_для_таблиц_DataGridView1.Size = new Size(598, 301);
         }
 
-        private void Таблица_Упаковки_семян_Click(object sender, EventArgs e)
+        private void Таблица_Упаковки_семян_Click(object sender, EventArgs e)                    //Открывает таблицу 'Упаковки семян'
         {
             Tob(1);
             Фотография_представителя_PictureBox2.Visible = false;
             Поле_для_таблиц_DataGridView1.Size = new Size(794, 301);
         }
 
-        private void Покупатель_Load(object sender, EventArgs e)
+        private void Покупатель_Load(object sender, EventArgs e)                                 //Загрузка данных в таблицы
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян". При необходимости она может быть перемещена или удалена.
             this.упаковки_семянTableAdapter.Fill(this.уП01_ИСПП5_Швидко_ИАDataSet.Упаковки_семян);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений". При необходимости она может быть перемещена или удалена.
             this.сорта_растенийTableAdapter.Fill(this.уП01_ИСПП5_Швидко_ИАDataSet.Сорта_растений);
-
         }
 
-        private void выйти_Click(object sender, EventArgs e)
+        private void выйти_Click(object sender, EventArgs e)      //Прекращает работу программы
         {
             Application.Exit();
         }
 
-        private void Поисковая_строка_TextChanged(object sender, EventArgs e)
+        private void Поисковая_строка_TextChanged(object sender, EventArgs e)          //Выделение строки, которая подходит под введённые данные в поисковую строку
         {
             for (int i = 0; i < Поле_для_таблиц_DataGridView1.RowCount; i++)
             {
@@ -82,7 +79,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             }
         }
         Point Mouse;
-        private void Покупатель_MouseMove(object sender, MouseEventArgs e)
+        private void Покупатель_MouseMove(object sender, MouseEventArgs e)       //Перемещает форму при удержании мыши
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -91,12 +88,12 @@ namespace УП01_ИСПП5_Швидко_ИА
             }
         }
 
-        private void Покупатель_MouseDown(object sender, MouseEventArgs e)
+        private void Покупатель_MouseDown(object sender, MouseEventArgs e)       //Перемещает форму при удержании мыши
         {
             Mouse = new Point(e.X, e.Y);
         }
         string pic;
-        private void Поле_для_таблиц_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void Поле_для_таблиц_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)       //Изменение фотографий при нажатие на разные строки
         {
             try
             {

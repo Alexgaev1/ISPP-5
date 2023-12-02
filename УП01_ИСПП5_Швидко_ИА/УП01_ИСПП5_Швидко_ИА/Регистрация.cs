@@ -20,7 +20,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             InitializeComponent();
         }
 
-        private void Кнопка_подтверждения_Click(object sender, EventArgs e)
+        private void Кнопка_подтверждения_Click(object sender, EventArgs e)        //Переходит на форму 'Авторизация'
         {
             if ((Логин_textBox5.Text == "") || (Пароль_textBox4.Text == "") || (Почта_textBox2.Text == ""))
             {
@@ -43,28 +43,28 @@ namespace УП01_ИСПП5_Швидко_ИА
             }
         }
 
-        private void Пароль_KeyPress(object sender, KeyPressEventArgs e)
+        private void Пароль_KeyPress(object sender, KeyPressEventArgs e)             //Проверяет на отсутствие букв
         {
             if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
             {
                 e.Handled = true;
-                MessageBox.Show("Поле не может содержать буквы");
+                MessageBox.Show("Поле не может содержать буквы", "Ошибка");
             }
         }
 
-        private void Вернуться_Click(object sender, EventArgs e)
+        private void Вернуться_Click(object sender, EventArgs e)        //Переходит на форму 'Авторизация'
         {
             Авторизация AvtFrm = new Авторизация();
             AvtFrm.Show();
             this.Hide();
         }
 
-        private void выйти_Click(object sender, EventArgs e)
+        private void выйти_Click(object sender, EventArgs e)                   //Прекращает работу программы
         {
             Application.Exit();
         }
         Point Mouse;
-        private void Регистрация_MouseMove(object sender, MouseEventArgs e)
+        private void Регистрация_MouseMove(object sender, MouseEventArgs e)        //Перемещает форму при удержании мыши
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -73,7 +73,7 @@ namespace УП01_ИСПП5_Швидко_ИА
             }
         }
 
-        private void Регистрация_MouseDown(object sender, MouseEventArgs e)
+        private void Регистрация_MouseDown(object sender, MouseEventArgs e)        //Перемещает форму при удержании мыши
         {
             Mouse = new Point(e.X, e.Y);
         }
