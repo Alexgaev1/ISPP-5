@@ -49,7 +49,6 @@
             this.Поиск_Label1 = new System.Windows.Forms.Label();
             this.Фотография_представителя_PictureBox2 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
             this.уП01_ИСПП5_Швидко_ИАDataSet = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSet();
             this.сортарастенийBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.сорта_растенийTableAdapter = new УП01_ИСПП5_Швидко_ИА.УП01_ИСПП5_Швидко_ИАDataSetTableAdapters.Сорта_растенийTableAdapter();
@@ -124,7 +123,7 @@
             this.вернуться_ToolStripMenuItem2.BackColor = System.Drawing.Color.LightYellow;
             this.вернуться_ToolStripMenuItem2.ForeColor = System.Drawing.Color.Red;
             this.вернуться_ToolStripMenuItem2.Name = "вернуться_ToolStripMenuItem2";
-            this.вернуться_ToolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
+            this.вернуться_ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.вернуться_ToolStripMenuItem2.Text = "Вернуться";
             this.вернуться_ToolStripMenuItem2.Click += new System.EventHandler(this.вернуться_Click);
             // 
@@ -262,14 +261,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(730, 326);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 31;
-            // 
             // уП01_ИСПП5_Швидко_ИАDataSet
             // 
             this.уП01_ИСПП5_Швидко_ИАDataSet.DataSetName = "УП01_ИСПП5_Швидко_ИАDataSet";
@@ -350,12 +341,12 @@
             // Найти_фото_roundBtn2
             // 
             this.Найти_фото_roundBtn2.BackColor = System.Drawing.Color.LightYellow;
-            this.Найти_фото_roundBtn2.Location = new System.Drawing.Point(667, 229);
+            this.Найти_фото_roundBtn2.Location = new System.Drawing.Point(656, 229);
             this.Найти_фото_roundBtn2.Name = "Найти_фото_roundBtn2";
             this.Найти_фото_roundBtn2.Radius = 10;
-            this.Найти_фото_roundBtn2.Size = new System.Drawing.Size(91, 26);
+            this.Найти_фото_roundBtn2.Size = new System.Drawing.Size(113, 34);
             this.Найти_фото_roundBtn2.TabIndex = 33;
-            this.Найти_фото_roundBtn2.Text = "Найти фото";
+            this.Найти_фото_roundBtn2.Text = "Добавить/Изменить фото";
             this.Найти_фото_roundBtn2.Click += new System.EventHandler(this.Найти_фото_Click);
             // 
             // Администратор
@@ -366,7 +357,6 @@
             this.ClientSize = new System.Drawing.Size(819, 346);
             this.Controls.Add(this.Поле_для_таблиц_DataGridView1);
             this.Controls.Add(this.Найти_фото_roundBtn2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.выйти_PictureBox1);
             this.Controls.Add(this.Поиск_Label1);
             this.Controls.Add(this.Строка_поиска_TextBox1);
@@ -420,7 +410,6 @@
         private System.Windows.Forms.Label Поиск_Label1;
         private System.Windows.Forms.PictureBox Фотография_представителя_PictureBox2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label1;
         private Ремонт_пассажирских_вагонов.RoundBtn Найти_фото_roundBtn2;
         private УП01_ИСПП5_Швидко_ИАDataSet уП01_ИСПП5_Швидко_ИАDataSet;
         private System.Windows.Forms.BindingSource сортарастенийBindingSource;
